@@ -1,5 +1,12 @@
-.section{
-    background-color: black;
-    color: white;
+.title{
+    /* background-color: blueviolet; */
+    color: blue !important;
+    font-family: Arial;
     text-align: center;
+}
+.section{
+    background-color: blueviolet;
+    color: blue !important;
+    font-family: Arial;
+    text-align: center;  
 }
