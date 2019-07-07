@@ -1,12 +1,49 @@
-.title{
-    /* background-color: blueviolet; */
-    color: blue !important;
-    font-family: Arial;
+h1{
+    text-align: left;
+    margin: 5%;
+}
+/* Blue Theme */
+#blueOne{
+    background-color: #564787;
     text-align: center;
 }
-.section{
-    background-color: blueviolet;
-    color: blue !important;
-    font-family: Arial;
-    text-align: center;  
+#blueTwo{
+    background-color: #DBCBD8;
+    text-align: center;
 }
+#blueThree{
+    background-color: #F2FDFF;
+    text-align: center;
+}
+#blueFour{
+    background-color: #9AD4D6;
+    text-align: center;
+}
+#blueFive{
+    background-color: #101935;
+    text-align: center;
+}
+
+/* Orange Highlight */
+
+#ohOne{
+    background-color: #3F3F37;
+    text-align: center;
+}
+#ohTwo{
+    background-color: #D6D6B1;
+    text-align: center;
+}
+#ohThree{
+    background-color: #494331;
+    text-align: center;
+}
+#ohFour{
+    background-color: #878472;
+    text-align: center;
+}
+#ohFive{
+    background-color: #DE541E;
+    text-align: center;
+}
+
