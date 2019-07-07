@@ -1,27 +1,36 @@
 h1{
+    border: none !important;
     text-align: left;
     margin: 5%;
+}
+.columns{
+    margin:2%;
 }
 /* Blue Theme */
 #blueOne{
     background-color: #564787;
     text-align: center;
+    border: solid 1px white;
 }
 #blueTwo{
     background-color: #DBCBD8;
     text-align: center;
+    border: solid 1px white;
 }
 #blueThree{
     background-color: #F2FDFF;
     text-align: center;
+    border: solid 1px white;
 }
 #blueFour{
     background-color: #9AD4D6;
     text-align: center;
+    border: solid 1px white;
 }
 #blueFive{
     background-color: #101935;
     text-align: center;
+    border: solid 1px white;
 }
 
 /* Orange Highlight */
@@ -29,21 +38,193 @@ h1{
 #ohOne{
     background-color: #3F3F37;
     text-align: center;
+    border: solid 1px white;
 }
 #ohTwo{
     background-color: #D6D6B1;
     text-align: center;
+    border: solid 1px white;
 }
 #ohThree{
     background-color: #494331;
     text-align: center;
+    border: solid 1px white;
 }
 #ohFour{
     background-color: #878472;
     text-align: center;
+    border: solid 1px white;
 }
 #ohFive{
     background-color: #DE541E;
     text-align: center;
+    border: solid 1px white;
+}
+
+/* Blue Highlight */
+
+#ohOne{
+    background-color: #3F3F37;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohTwo{
+    background-color: #D6D6B1;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohThree{
+    background-color: #494331;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFour{
+    background-color: #878472;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFive{
+    background-color: #DE541E;
+    text-align: center;
+    border: solid 1px white;
+}
+
+/* Yellow Highlight */
+
+#ohOne{
+    background-color: #3F3F37;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohTwo{
+    background-color: #D6D6B1;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohThree{
+    background-color: #494331;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFour{
+    background-color: #878472;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFive{
+    background-color: #DE541E;
+    text-align: center;
+    border: solid 1px white;
+}
+
+/* Blue Grey */
+
+#ohOne{
+    background-color: #3F3F37;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohTwo{
+    background-color: #D6D6B1;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohThree{
+    background-color: #494331;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFour{
+    background-color: #878472;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFive{
+    background-color: #DE541E;
+    text-align: center;
+    border: solid 1px white;
+}
+
+/* Forest Creature */
+#ohOne{
+    background-color: #3F3F37;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohTwo{
+    background-color: #D6D6B1;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohThree{
+    background-color: #494331;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFour{
+    background-color: #878472;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFive{
+    background-color: #DE541E;
+    text-align: center;
+    border: solid 1px white;
+}
+
+/* Candy */
+
+#ohOne{
+    background-color: #3F3F37;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohTwo{
+    background-color: #D6D6B1;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohThree{
+    background-color: #494331;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFour{
+    background-color: #878472;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFive{
+    background-color: #DE541E;
+    text-align: center;
+    border: solid 1px white;
+}
+
+/* Modern */
+
+#ohOne{
+    background-color: #3F3F37;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohTwo{
+    background-color: #D6D6B1;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohThree{
+    background-color: #494331;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFour{
+    background-color: #878472;
+    text-align: center;
+    border: solid 1px white;
+}
+#ohFive{
+    background-color: #DE541E;
+    text-align: center;
+    border: solid 1px white;
 }
 
