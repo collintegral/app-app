@@ -24,3 +24,12 @@ https://coolors.co/3f3f37-d6d6b1-494331-878472-e6af2e
 
 Blue Grey
 https://coolors.co/07020d-5db7de-f1e9db-a39b8b-716a5c
+
+Forest Creature
+https://coolors.co/7fb069-fffbbd-e6aa68-ca3c25-1d1a05
+
+Candy
+https://coolors.co/084c61-db504a-e3b505-4f6d7a-56a3a6
+
+Modern
+https://coolors.co/ffffff-fffc31-5c415d-e94f37-393e41
