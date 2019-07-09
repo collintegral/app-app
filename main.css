@@ -61,140 +61,112 @@ h1{
     border: solid 1px white;
 }
 
-/* Blue Highlight */
-
-#ohOne{
-    background-color: #3F3F37;
-    text-align: center;
-    border: solid 1px white;
-}
-#ohTwo{
-    background-color: #D6D6B1;
-    text-align: center;
-    border: solid 1px white;
-}
-#ohThree{
-    background-color: #494331;
-    text-align: center;
-    border: solid 1px white;
-}
-#ohFour{
-    background-color: #878472;
-    text-align: center;
-    border: solid 1px white;
-}
-#ohFive{
-    background-color: #DE541E;
-    text-align: center;
-    border: solid 1px white;
-}
-
-/* Yellow Highlight */
-
-#ohOne{
-    background-color: #3F3F37;
-    text-align: center;
-    border: solid 1px white;
-}
-#ohTwo{
-    background-color: #D6D6B1;
-    text-align: center;
-    border: solid 1px white;
-}
-#ohThree{
-    background-color: #494331;
-    text-align: center;
-    border: solid 1px white;
-}
-#ohFour{
-    background-color: #878472;
-    text-align: center;
-    border: solid 1px white;
-}
-#ohFive{
-    background-color: #DE541E;
-    text-align: center;
-    border: solid 1px white;
-}
-
 /* Blue Grey */
 
-#ohOne{
-    background-color: #3F3F37;
+#bgOne{
+    background-color: #07020D;
     text-align: center;
     border: solid 1px white;
 }
-#ohTwo{
-    background-color: #D6D6B1;
+#bgTwo{
+    background-color:#5DB7DE;
     text-align: center;
     border: solid 1px white;
 }
-#ohThree{
-    background-color: #494331;
+#bgThree{
+    background-color: #F1E9DB;
     text-align: center;
     border: solid 1px white;
 }
-#ohFour{
-    background-color: #878472;
+#bgFour{
+    background-color: #A39B8B;
     text-align: center;
     border: solid 1px white;
 }
-#ohFive{
-    background-color: #DE541E;
+#bgFive{
+    background-color: #716A5C;
     text-align: center;
     border: solid 1px white;
 }
 
 /* Forest Creature */
-#ohOne{
+#fcOne{
     background-color: #3F3F37;
     text-align: center;
     border: solid 1px white;
 }
-#ohTwo{
+#fcTwo{
     background-color: #D6D6B1;
     text-align: center;
     border: solid 1px white;
 }
-#ohThree{
+#fcThree{
     background-color: #494331;
     text-align: center;
     border: solid 1px white;
 }
-#ohFour{
+#fcFour{
     background-color: #878472;
     text-align: center;
     border: solid 1px white;
 }
-#ohFive{
+#fcFive{
     background-color: #DE541E;
+    text-align: center;
+    border: solid 1px white;
+}
+
+/* Blue Highlight */
+
+#bhOne{
+    background-color: #3F3F37;
+    text-align: center;
+    border: solid 1px white;
+}
+#bhTwo{
+    background-color: #D6D6B1;
+    text-align: center;
+    border: solid 1px white;
+}
+#bhThree{
+    background-color: #494331;
+    text-align: center;
+    border: solid 1px white;
+}
+#bhFour{
+    background-color: #878472;
+    text-align: center;
+    border: solid 1px white;
+}
+#bhFive{
+    background-color: #087E8B;
     text-align: center;
     border: solid 1px white;
 }
 
 /* Candy */
 
-#ohOne{
+#caOne{
     background-color: #3F3F37;
     text-align: center;
     border: solid 1px white;
 }
-#ohTwo{
+#caTwo{
     background-color: #D6D6B1;
     text-align: center;
     border: solid 1px white;
 }
-#ohThree{
+#caThree{
     background-color: #494331;
     text-align: center;
     border: solid 1px white;
 }
-#ohFour{
+#caFour{
     background-color: #878472;
     text-align: center;
     border: solid 1px white;
 }
-#ohFive{
+#caFive{
     background-color: #DE541E;
     text-align: center;
     border: solid 1px white;
@@ -202,27 +174,27 @@ h1{
 
 /* Modern */
 
-#ohOne{
+#mOne{
     background-color: #3F3F37;
     text-align: center;
     border: solid 1px white;
 }
-#ohTwo{
+#mTwo{
     background-color: #D6D6B1;
     text-align: center;
     border: solid 1px white;
 }
-#ohThree{
+#mThree{
     background-color: #494331;
     text-align: center;
     border: solid 1px white;
 }
-#ohFour{
+#mFour{
     background-color: #878472;
     text-align: center;
     border: solid 1px white;
 }
-#ohFive{
+#mFive{
     background-color: #DE541E;
     text-align: center;
     border: solid 1px white;
@@ -231,56 +203,83 @@ h1{
 
 /* Coffee Shop */
 
-#ohOne{
+#coOne{
     background-color: #3F3F37;
     text-align: center;
     border: solid 1px white;
 }
-#ohTwo{
+#coTwo{
     background-color: #D6D6B1;
     text-align: center;
     border: solid 1px white;
 }
-#ohThree{
+#coThree{
     background-color: #494331;
     text-align: center;
     border: solid 1px white;
 }
-#ohFour{
+#coFour{
     background-color: #878472;
     text-align: center;
     border: solid 1px white;
 }
-#ohFive{
+#coFive{
     background-color: #DE541E;
     text-align: center;
     border: solid 1px white;
 }
 
+/* Yellow Highlight */
 
-/* Primary */
-
-#ohOne{
+#yhOne{
     background-color: #3F3F37;
     text-align: center;
     border: solid 1px white;
 }
-#ohTwo{
+#yhTwo{
     background-color: #D6D6B1;
     text-align: center;
     border: solid 1px white;
 }
-#ohThree{
+#yhThree{
     background-color: #494331;
     text-align: center;
     border: solid 1px white;
 }
-#ohFour{
+#yhFour{
     background-color: #878472;
     text-align: center;
     border: solid 1px white;
 }
-#ohFive{
+#yhFive{
+    background-color: #E6AF2E;
+    text-align: center;
+    border: solid 1px white;
+}
+
+/* Primary */
+
+#prOne{
+    background-color: #3F3F37;
+    text-align: center;
+    border: solid 1px white;
+}
+#prTwo{
+    background-color: #D6D6B1;
+    text-align: center;
+    border: solid 1px white;
+}
+#prThree{
+    background-color: #494331;
+    text-align: center;
+    border: solid 1px white;
+}
+#prFour{
+    background-color: #878472;
+    text-align: center;
+    border: solid 1px white;
+}
+#prFive{
     background-color: #DE541E;
     text-align: center;
     border: solid 1px white;
@@ -289,27 +288,27 @@ h1{
 
 /* Rose Garden */
 
-#ohOne{
+#rgOne{
     background-color: #3F3F37;
     text-align: center;
     border: solid 1px white;
 }
-#ohTwo{
+#rgTwo{
     background-color: #D6D6B1;
     text-align: center;
     border: solid 1px white;
 }
-#ohThree{
+#rgThree{
     background-color: #494331;
     text-align: center;
     border: solid 1px white;
 }
-#ohFour{
+#rgFour{
     background-color: #878472;
     text-align: center;
     border: solid 1px white;
 }
-#ohFive{
+#rgFive{
     background-color: #DE541E;
     text-align: center;
     border: solid 1px white;
@@ -318,27 +317,27 @@ h1{
 
 /* Fun */
 
-#ohOne{
+#funOne{
     background-color: #3F3F37;
     text-align: center;
     border: solid 1px white;
 }
-#ohTwo{
+#funTwo{
     background-color: #D6D6B1;
     text-align: center;
     border: solid 1px white;
 }
-#ohThree{
+#funThree{
     background-color: #494331;
     text-align: center;
     border: solid 1px white;
 }
-#ohFour{
+#funFour{
     background-color: #878472;
     text-align: center;
     border: solid 1px white;
 }
-#ohFive{
+#funFive{
     background-color: #DE541E;
     text-align: center;
     border: solid 1px white;
