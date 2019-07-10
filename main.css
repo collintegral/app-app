@@ -1,10 +1,11 @@
 h1{
-    border: none !important;
+    border: solid grey 5px;
     text-align: left;
-    margin: 5%;
+    margin: 5px;
 }
 .columns{
-    margin:2%;
+  margin:20px;
+  border: solid grey 5px;
 }
 /* Blue Theme */
 #blueOne{
