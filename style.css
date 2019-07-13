@@ -1,0 +1,45 @@
+.container {
+height: 90vh;
+width: 90vw;
+margin: 2rem auto;
+display: grid;
+grid-template-areas: "header header header"
+                      "left main right"
+                        "footer footer footer";
+  
+}
+.cell{
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem;
+}
+.cell-1{
+  grid-row: 1;
+  grid-column: 1/4;
+background: deepskyblue;
+}
+.cell-2{
+  background: orangered;
+}
+.cell-3{
+  background: royalblue;
+}
+.cell-4{
+  background: royalblue;
+}
+.cell-5{
+  background: blueviolet;
+}
+.cell-6{
+  background: blueviolet;
+}
+.cell-7{
+  background: coral;
+}
+.cell-8{
+  background: lightseagreen;
+}
+.cell-9{
+  background: maroon;
+}
