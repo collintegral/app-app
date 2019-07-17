@@ -6,7 +6,8 @@ display: grid;
 grid-template-areas: "header header header"
                       "left main right"
                         "footer footer footer";
-  
+ grid-template-rows: 1 fr 3 fr 1fr;
+ grid-template-columns: 1fr 2fr 1fr;                     
 }
 .cell{
   color: white;
