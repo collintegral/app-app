@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OS File
 .DS_Store
 
@@ -95,3 +96,10 @@ typings/
 
 # JShint - TIM
 .jshintrc
+=======
+node_modules
+package.json
+node_modules/bulma-start
+package-lock.json
+yarn.lock
+>>>>>>> a0efe3c86132af7b5c889f7cb40ea46fc1667a31
