@@ -3,8 +3,8 @@ const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
 const session = require('express-session');
+const mongoose = require('mongoose');
 
-const db = require('./models');
 const routes = require('./routes');
 const passport = require('./config/passport');
 const corsOptions = require('./config/cors.js');
@@ -38,22 +38,12 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
+// Load up the mongoose server
+mongoose.connect("mongodb://localhost/appApp", { useNewUrlParser: true });
+
 const server = app.listen(PORT, () => {
   // eslint-disable-next-line
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
-
-// Dynamically force schema refresh only for 'test'
-const FORCE_SCHEMA = process.env.NODE_ENV === 'test';
-
-db.sequelize
-  .authenticate()
-  .then(() => {
-    db.sequelize.sync({ force: FORCE_SCHEMA }).then(() => {
-      console.log(`🌎 ==> API server now on port ${PORT}!`); // eslint-disable-line no-console
-      app.emit('appStarted');
-    });
-  })
-  .catch(console.error); // eslint-disable-line no-console
 
 module.exports = app;
