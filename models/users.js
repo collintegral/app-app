@@ -2,8 +2,9 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const uniqueValidator = require("mongoose-unique-validator");
 const bcrypt = require("bcrypt");
+const findOrCreate = require("mongoose-findorcreate");
 
-const UserSchema = new Schema ({
+const UserSchema = new Schema({
     userID: {
         type: Number
         , required: true
@@ -26,6 +27,7 @@ const UserSchema = new Schema ({
 });
 
 UserSchema.plugin(uniqueValidator);
+UserSchema.plugin(findOrCreate);
 
 UserSchema.methods.validPassword = password => {
     return bcrypt.compareSync(password, this.passwordHash);
