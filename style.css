@@ -1,12 +1,13 @@
+
 /* Grid  */
 
 .container {
-height: 90vh;
-margin: 2rem;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr; 
-grid-template-rows: 1fr 1fr 1fr;                  
-}
+  height: 90vh;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr;                  
+  }
 .cell{
   color: white;
  font-size: 3rem;
