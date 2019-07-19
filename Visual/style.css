@@ -5,6 +5,10 @@
   bottom: 0;
   overflow:hidden;
 } */
+.footer{
+  padding: 10px;
+  margin-top: 10px;
+}
 /* Grid  */
 
 .container {
@@ -57,7 +61,7 @@ background: deepskyblue;
   background-color: white;
 }
 @media only screen and (max-width:768px) {
-  .navbar-burger {
+  .burger {
       display: block !important;
 
   }

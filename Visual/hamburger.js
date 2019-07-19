@@ -12,8 +12,8 @@
 //   });
 
 
-
-$(".navbar-burger").click(() => {
+$("#burger").click(() => {
+    console.log("click");
  if ($(".navbar-menu").css("display") == "block") {
    console.log("close menu");
    $(".navbar-menu").css("display", "none");
