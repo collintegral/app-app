@@ -29,7 +29,7 @@
 
     <div id="navbarMenu" class="navbar-menu is-pulled-left is-mobile">
       <div class="navbar-start is-mobile">
-        <a  href="#" class="navbar-item is-mobile">
+        <a href="#" class="navbar-item is-mobile">
           Home
         </a>
 
@@ -60,23 +60,36 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <!--Modal-->
-      <div id="image-modal" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-         <div class="modal-card">
-      </div>
+          <div id="image-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <div class="modal-card">
+                <form action="/login" method="post">
+                  <div>
+                    <label>Username:</label>
+                    <input type="text" name="username" />
+                  </div>
+                  <div>
+                    <label>Password:</label>
+                    <input type="password" name="password" />
+                  </div>
+                  <div>
+                    <input type="submit" value="Log In" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <button id="image-modal-close" class="modal-close"></button>
+          </div>
+          <br>
+          <button class="button" id="showModal">Show</button>
         </div>
-        <button id="image-modal-close" class="modal-close"></button>
       </div>
-      <br>
-        <button class="button" id="showModal">Show</button>
     </div>
-        </div>
-      </div>
     </div>
   </nav>
 
-  
+
   <!-- Body Grid -->
   <div id="grid" class="container is-mobile">
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -108,15 +121,15 @@
     </div>
   </div>
   <!-- Modals -->
-  
+
   <!-- Footer -->
   <footer class="footer">
     <div class="content has-text-centered">
-        <i class="fab fa-facebook icon is-large is-primary"></i>
-        <i class="fab fa-instagram icon is-large is-primary"></i>
-        <i class="fab fa-github icon is-large is-primary"></i>
+      <i class="fab fa-facebook icon is-large is-primary"></i>
+      <i class="fab fa-instagram icon is-large is-primary"></i>
+      <i class="fab fa-github icon is-large is-primary"></i>
     </div>
-  
+
     <!-- <div class="container">
       <div class="content has-text-centered">
         <div class="fab fa-facebook is-primary"></div>
