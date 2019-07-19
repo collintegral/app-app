@@ -35,3 +35,14 @@ btn.addEventListener('click', function(){
 imageModalCloseBtn.addEventListener('click', function(){
   modalDlg.classList.remove('is-active');
 });
+
+var btn = document.querySelector('#showModal1');
+var modalDlg = document.querySelector('#image-modal1');
+var imageModalCloseBtn = document.querySelector('#image-modal-close1');
+btn.addEventListener('click', function(){
+  modalDlg.classList.add('is-active');
+});
+
+imageModalCloseBtn.addEventListener('click', function(){
+  modalDlg.classList.remove('is-active');
+});
