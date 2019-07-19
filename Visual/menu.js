@@ -95,6 +95,7 @@ function App() {
                         </footer>
                     </li>
                 </ul>
+                </p>
 </aside>
 
             );
