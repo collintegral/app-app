@@ -1,5 +1,4 @@
-const auth = require("../../auth");
-auth.initialize();
+
 
 // $(document).ready(function() {
 
@@ -13,8 +12,8 @@ auth.initialize();
 //     });
 //   });
 
-const auth = require("../../auth");
-auth.initialize();
+// const auth = require("../../auth");
+// auth.initialize();
 
 $("#burger").click(() => {
     console.log("click");
