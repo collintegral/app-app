@@ -1,6 +1,6 @@
 module.exports = {
-  Components: require("./components"),
-  Themes: require("./themes"),
+  Component: require("./components"),
+  Theme: require("./themes"),
   //Fonts: require("./fonts"),
-  Users: require("./users")
+  User: require("./users")
 };
