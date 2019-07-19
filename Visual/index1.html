@@ -64,27 +64,81 @@
             <div class="modal-background"></div>
             <div class="modal-content">
               <div class="modal-card">
-                <form action="/login" method="post">
-                  <div>
-                    <label>Username:</label>
-                    <input type="text" name="username" />
+
+                <!---->
+                <article class="message">
+                  <div class="message-header">
+                    <p>Welcome!</p>
                   </div>
-                  <div>
-                    <label>Password:</label>
-                    <input type="password" name="password" />
+                  <div class="message-body">
+                    <form action="/login" method="post">
+                      <div>
+                        <label>Username:</label>
+                        <input type="text" name="username" />
+                      </div>
+                      <div>
+                        <label>Password:</label>
+                        <input type="password" name="password" />
+                      </div>
+                      <div>
+                        <input type="submit" value="Log In" />
+                      </div>
+                    </form>
                   </div>
-                  <div>
-                    <input type="submit" value="Log In" />
-                  </div>
-                </form>
+                </article>
+                <!---->
+
               </div>
             </div>
             <button id="image-modal-close" class="modal-close"></button>
           </div>
           <br>
-          <button class="button" id="showModal">Show</button>
+          <button class="button" id="showModal">Log In</button>
+        </div>
+
+        <div class="navbar-item">
+          <!--Modal-->
+          <div id="image-modal1" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <div class="modal-card">
+
+                <!---->
+                <article class="message">
+                  <div class="message-header">
+                    <p>Welcome!</p>
+                  </div>
+                  <div class="message-body">
+                    <form action="/login" method="post">
+                      <div>
+                        <label>Username:</label>
+                        <input type="text" name="username" />
+                      </div>
+                      <div>
+                        <label>Password:</label>
+                        <input type="password" name="password" />
+                      </div>
+                      <div>
+                          <label>Confirm Password:</label>
+                          <input type="password" name="password" />
+                        </div>
+                      <div>
+                        <input type="submit" value="Log In" />
+                      </div>
+                    </form>
+                  </div>
+                </article>
+                <!---->
+
+              </div>
+            </div>
+            <button id="image-modal-close1" class="modal-close"></button>
+          </div>
+          <br>
+          <button class="button" id="showModal1">Sign Up</button>
         </div>
       </div>
+
     </div>
     </div>
   </nav>
