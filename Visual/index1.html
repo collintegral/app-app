@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+
+  <title>App-App</title>
+</head>
+<!-- Nav Bar -->
+
+<body>
+  <nav class="navbar is-mobile" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+<!-- Hamburger -->
+      <a role="button" id="burger" class="navbar-burger burger is-mobile" aria-label="menu" aria-expanded="false"
+        data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu is-mobile">
+      <div class="navbar-start is-mobile">
+        <a  href="#" class="navbar-item is-mobile">
+          Home
+        </a>
+
+        <a href="#" class="navbar-item is-mobile">
+          Documentation
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable is-mobile">
+          <a href="#" class="navbar-link is-mobile">
+            More
+          </a>
+          <div class="navbar-dropdown is-mobile">
+            <a href="#" class="navbar-item is-mobile">
+              About
+            </a>
+            <a href="#" class="navbar-item is-mobile">
+              Jobs
+            </a>
+            <a href="#" class="navbar-item is-mobile">
+              Contact
+            </a>
+            <hr class="navbar-divider is-mobile">
+            <a href="#" class="navbar-item is-mobile">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <!--Modal-->
+      <div id="image-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+         <div class="modal-card">
+      </div>
+        </div>
+        <button id="image-modal-close" class="modal-close"></button>
+      </div>
+      <br>
+        <button class="button" id="showModal">Show</button>
+    </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <!-- Body Grid -->
+  <div id="grid" class="container is-mobile">
+    <div class="cell cell-1">1</div>
+    <div class="cell cell-2">2</div>
+    <div class="cell cell-3">3</div>
+    <div class="cell cell-4">4</div>
+    <div class="cell cell-5">5</div>
+    <div class="cell cell-6">6</div>
+    <div class="cell cell-7">7</div>
+    <div class="cell cell-8">8</div>
+    <div class="cell cell-9">9</div>
+  </div>
+  <!-- Modals -->
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+        <i class="fab fa-facebook icon is-large is-primary"></i>
+        <i class="fab fa-instagram icon is-large is-primary"></i>
+        <i class="fab fa-github icon is-large is-primary"></i>
+    </div>
+  
+    <!-- <div class="container">
+      <div class="content has-text-centered">
+        <div class="fab fa-facebook is-primary"></div>
+      </div>
+    </div> -->
+  </footer>
+  <!-- Scripts -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="hamburger.js"></script>
+</body>
+
+</html>

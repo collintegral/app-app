@@ -1,3 +1,4 @@
+
 h1{
     border: solid grey 5px;
     text-align: left;
@@ -7,6 +8,7 @@ h1{
   margin:20px;
   border: solid grey 5px;
 }
+
 /* Blue Theme */
 #blueOne{
     background-color: #564787;
