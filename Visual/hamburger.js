@@ -1,5 +1,3 @@
-const auth = require("../../auth");
-auth.initialize();
 
 // $(document).ready(function() {
 
@@ -13,8 +11,7 @@ auth.initialize();
 //     });
 //   });
 
-const auth = require("../../auth");
-auth.initialize();
+
 
 $(".navbar-burger").click(() => {
  if ($(".navbar-menu").css("display") == "block") {
@@ -24,4 +21,17 @@ $(".navbar-burger").click(() => {
    console.log("open menu");
    $(".navbar-menu").css("display", "block");
  }
+});
+
+//modal
+
+var btn = document.querySelector('#showModal');
+var modalDlg = document.querySelector('#image-modal');
+var imageModalCloseBtn = document.querySelector('#image-modal-close');
+btn.addEventListener('click', function(){
+  modalDlg.classList.add('is-active');
+});
+
+imageModalCloseBtn.addEventListener('click', function(){
+  modalDlg.classList.remove('is-active');
 });
