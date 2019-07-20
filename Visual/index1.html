@@ -40,20 +40,11 @@
           <a href="#" class="navbar-link is-mobile">
             More
           </a>
-          <div class="navbar-dropdown is-mobile">
-            <a href="#" class="navbar-item is-mobile">
-              About
-            </a>
-            <a href="#" class="navbar-item is-mobile">
-              Jobs
-            </a>
+          <div class="navbar-dropdown is-mobile">            
             <a href="#" class="navbar-item is-mobile">
               Contact
             </a>
             <hr class="navbar-divider is-mobile">
-            <a href="#" class="navbar-item is-mobile">
-              Report an issue
-            </a>
           </div>
         </div>
       </div>
@@ -68,7 +59,7 @@
                 <!---->
                 <article class="message">
                   <div class="message-header">
-                    <p>Log In</p>
+                    <p>Welcome!</p>
                   </div>
                   <div class="message-body">
                     <form action="/login" method="post">
@@ -106,7 +97,7 @@
                 <!---->
                 <article class="message">
                   <div class="message-header">
-                    <p>Sign Up</p>
+                    <p>Welcome!</p>
                   </div>
                   <div class="message-body">
                     <form action="/login" method="post">
@@ -142,7 +133,47 @@
     </div>
     </div>
   </nav>
+  <!--Will be draggable components, static for now-->
+  <nav class="navbar is-mobile" role="navigation" aria-label="main navigation">
+        
+    <!-- Hamburger -->
+    <a role="button" id="burger" class="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+      data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
 
+  <div id="navbarMenu" class="navbar-menu is-pulled-left is-mobile">
+    <div class="navbar-start is-mobile">
+      <a href="#" class="navbar-item is-mobile">
+        Navbar
+      </a>
+    
+          <a href="#" class="navbar-item is-mobile">
+            Message
+          </a>
+          <a href="#" class="navbar-item is-mobile">
+            Card
+          </a>
+          <a href="#" class="navbar-item is-mobile">
+            Hero
+          </a>
+          <a href="#" class="navbar-item is-mobile">
+            Container
+          </a>
+          <a href="#" class="navbar-item is-mobile">
+            Image Box
+          </a>
+          <a href="#" class="navbar-item is-mobile">
+            Footer
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-end">
+</nav>
 
   <!-- Body Grid -->
   <div id="grid" class="container is-mobile">
