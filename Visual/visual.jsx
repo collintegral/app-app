@@ -1,42 +1,44 @@
 import React, { Component } from 'react';
+
 class App extends Component {
 
-  $("#burger").click(() => {
-    console.log("click");
-    if ($(".navbar-menu").css("display") == "block") {
-      console.log("close menu");
-      $(".navbar-menu").css("display", "none");
-    } else {
-      console.log("open menu");
-      $(".navbar-menu").css("display", "block");
-    }
-  });
+//   $("#burger").click(() => {
+//     console.log("click");
+//     if ($(".navbar-menu").css("display") == "block") {
+//       console.log("close menu");
+//       $(".navbar-menu").css("display", "none");
+//     } else {
+//       console.log("open menu");
+//       $(".navbar-menu").css("display", "block");
+//     }
+//   });
 
-//modal
+// //modal
 
-var btn = document.querySelector('#showModal');
-var modalDlg = document.querySelector('#image-modal');
-var imageModalCloseBtn = document.querySelector('#image-modal-close');
-btn.addEventListener('click', function () {
-  modalDlg.classList.add('is-active');
-});
+// var btn = document.querySelector('#showModal');
+// var modalDlg = document.querySelector('#image-modal');
+// var imageModalCloseBtn = document.querySelector('#image-modal-close');
+// btn.addEventListener('click', function () {
+//   modalDlg.classList.add('is-active');
+// });
 
-imageModalCloseBtn.addEventListener('click', function () {
-  modalDlg.classList.remove('is-active');
-});
+// imageModalCloseBtn.addEventListener('click', function () {
+//   modalDlg.classList.remove('is-active');
+// });
 
-var btn = document.querySelector('#showModal1');
-var modalDlg = document.querySelector('#image-modal1');
-var imageModalCloseBtn = document.querySelector('#image-modal-close1');
-btn.addEventListener('click', function () {
-  modalDlg.classList.add('is-active');
-});
+// var btn = document.querySelector('#showModal1');
+// var modalDlg = document.querySelector('#image-modal1');
+// var imageModalCloseBtn = document.querySelector('#image-modal-close1');
+// btn.addEventListener('click', function () {
+//   modalDlg.classList.add('is-active');
+// });
 
-imageModalCloseBtn.addEventListener('click', function () {
-  modalDlg.classList.remove('is-active');
-});
+// imageModalCloseBtn.addEventListener('click', function () {
+//   modalDlg.classList.remove('is-active');
+// });
 render() {
   return (
+    <div>
   <nav className="navbar is-mobile" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="https://bulma.io">
@@ -155,8 +157,6 @@ render() {
     <span aria-hidden="true"></span>
     <span aria-hidden="true"></span>
           </a>
-        </div>
-
     <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
       <div className="navbar-start is-mobile">
         <a href="#" className="navbar-item is-mobile">
@@ -183,9 +183,8 @@ render() {
                 </a>
       </div>
     </div>
-          </div >
-    <div className="navbar-end">
-      </nav>
+    <div className="navbar-end"></div>
+    </nav>
 
   {/* <!-- Body Grid --> */ }
   <div id="grid" className="container is-mobile">
@@ -209,12 +208,13 @@ render() {
       <i className="fab fa-github icon is-large is-primary"></i>
     </div>
 
-    <!-- <div className="container">
+    {/* <div className="container">
       <div className="content has-text-centered">
         <div className="fab fa-facebook is-primary"></div>
       </div>
-    </div> -->
-        </footer>
-        )
-}
-}
+    </div> */}
+    </footer>
+    </div>
+  )}
+
+  }
