@@ -17,8 +17,13 @@ module.exports = (app) => {
         })
     );
 
-    app.get("/api/signup/:username/:inputpassword/:email", (req, res) => {
-        db.User.findOrCreate({ email: inputemail }, {/*Body Object Goes here*/ }, (err, click, created) => {
+    app.post("/signup", (req, res) => {
+        // Check validity of sign-up info
+        // - email is valid
+        // - username contains valid characters
+        // - password is long enough and has a variety of characters
+        
+        db.User.findOrCreate({ email: req.body.email }, req.body, (err, click, created) => {
             if (created) {
                 // Successful user generation
             }

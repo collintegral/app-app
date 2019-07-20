@@ -18,7 +18,7 @@
       <a class="navbar-item" href="https://bulma.io">
         <img src="Logo.PNG">
       </a>
-<!-- Hamburger -->
+      <!-- Hamburger -->
       <a role="button" id="burger" class="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
         data-target="navMenu">
         <span aria-hidden="true"></span>
@@ -68,7 +68,7 @@
                 <!---->
                 <article class="message">
                   <div class="message-header">
-                    <p>Welcome!</p>
+                    <p>Log In</p>
                   </div>
                   <div class="message-body">
                     <form action="/login" method="post">
@@ -106,10 +106,14 @@
                 <!---->
                 <article class="message">
                   <div class="message-header">
-                    <p>Welcome!</p>
+                    <p>Create Your Free Account</p>
                   </div>
                   <div class="message-body">
-                    <form action="/login" method="post">
+                    <form action="/signup" method="post">
+                      <div>
+                        <label>Email:</label>
+                        <input type="text" name="email" />
+                      </div>
                       <div>
                         <label>Username:</label>
                         <input type="text" name="username" />
@@ -119,9 +123,9 @@
                         <input type="password" name="password" />
                       </div>
                       <div>
-                          <label>Confirm Password:</label>
-                          <input type="password" name="password" />
-                        </div>
+                        <label>Confirm Password:</label>
+                        <input type="password" name="password" />
+                      </div>
                       <div>
                         <input type="submit" value="Log In" />
                       </div>
@@ -147,31 +151,31 @@
   <!-- Body Grid -->
   <div id="grid" class="container is-mobile">
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="cell cell-1">1</div>
+      <div class="cell cell-1">1</div>
     </div>
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="cell cell-2">2</div>
+      <div class="cell cell-2">2</div>
     </div>
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="cell cell-3">3</div>
+      <div class="cell cell-3">3</div>
     </div>
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="cell cell-4">4</div>
+      <div class="cell cell-4">4</div>
     </div>
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="cell cell-5">5</div>
+      <div class="cell cell-5">5</div>
     </div>
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="cell cell-6">6</div>
+      <div class="cell cell-6">6</div>
     </div>
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="cell cell-7">7</div>
+      <div class="cell cell-7">7</div>
     </div>
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="cell cell-8">8</div>
+      <div class="cell cell-8">8</div>
     </div>
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="cell cell-9">9</div>
+      <div class="cell cell-9">9</div>
     </div>
   </div>
   <!-- Modals -->

@@ -1,5 +1,5 @@
 {
-  "name": "TBD",
+  "name": "tbd",
   "version": "0.1.0",
   "description": "TBD",
   "private": true,
@@ -34,5 +34,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/collintegral/app-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/collintegral/app-app/issues"
+  },
+  "homepage": "https://github.com/collintegral/app-app#readme"
 }
