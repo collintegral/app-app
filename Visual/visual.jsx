@@ -37,13 +37,13 @@ imageModalCloseBtn.addEventListener('click', function(){
 });
     render() {
         return(
-          nav class="navbar is-mobile" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
+          nav className="navbar is-mobile" role="navigation" aria-label="main navigation">
+          <div className="navbar-brand">
+            <a className="navbar-item" href="https://bulma.io">
               <img src="Logo.PNG">
             </a>
       <!-- Hamburger -->
-            <a role="button" id="burger" class="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+            <a role="button" id="burger" className="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
               data-target="navMenu">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -51,34 +51,34 @@ imageModalCloseBtn.addEventListener('click', function(){
             </a>
           </div>
       
-          <div id="navbarMenu" class="navbar-menu is-pulled-left is-mobile">
-            <div class="navbar-start is-mobile">     
-              <div class="navbar-item has-dropdown is-hoverable is-mobile">
-                <a href="#" class="navbar-link is-mobile">
+          <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
+            <div className="navbar-start is-mobile">     
+              <div className="navbar-item has-dropdown is-hoverable is-mobile">
+                <a href="#" className="navbar-link is-mobile">
                  The App-App
                 </a>
-                <div class="navbar-dropdown is-mobile">            
-                  <a href="#" class="navbar-item is-mobile">
+                <div className="navbar-dropdown is-mobile">            
+                  <a href="#" className="navbar-item is-mobile">
                     
                   </a>
-                  <hr class="navbar-divider is-mobile">
+                  <hr className="navbar-divider is-mobile">
                 </div>
               </div>
             </div>
-            <div class="navbar-end">
-              <div class="navbar-item">
+            <div className="navbar-end">
+              <div className="navbar-item">
                 <!--Modal-->
-                <div id="image-modal" class="modal">
-                  <div class="modal-background"></div>
-                  <div class="modal-content">
-                    <div class="modal-card">
+                <div id="image-modal" className="modal">
+                  <div className="modal-background"></div>
+                  <div className="modal-content">
+                    <div className="modal-card">
       
                       <!---->
-                      <article class="message">
-                        <div class="message-header">
+                      <article className="message">
+                        <div className="message-header">
                           <p>Welcome!</p>
                         </div>
-                        <div class="message-body">
+                        <div className="message-body">
                           <form action="/login" method="post">
                             <div>
                               <label>Username:</label>
@@ -98,25 +98,25 @@ imageModalCloseBtn.addEventListener('click', function(){
       
                     </div>
                   </div>
-                  <button id="image-modal-close" class="modal-close"></button>
+                  <button id="image-modal-close" className="modal-close"></button>
                 </div>
                 <br>
-                <button class="button" id="showModal">Log In</button>
+                <button className="button" id="showModal">Log In</button>
               </div>
       
-              <div class="navbar-item">
+              <div className="navbar-item">
                 <!--Modal-->
-                <div id="image-modal1" class="modal">
-                  <div class="modal-background"></div>
-                  <div class="modal-content">
-                    <div class="modal-card">
+                <div id="image-modal1" className="modal">
+                  <div className="modal-background"></div>
+                  <div className="modal-content">
+                    <div className="modal-card">
       
                       <!---->
-                      <article class="message">
-                        <div class="message-header">
+                      <article className="message">
+                        <div className="message-header">
                           <p>Welcome!</p>
                         </div>
-                        <div class="message-body">
+                        <div className="message-body">
                           <form action="/login" method="post">
                             <div>
                               <label>Username:</label>
@@ -140,10 +140,10 @@ imageModalCloseBtn.addEventListener('click', function(){
       
                     </div>
                   </div>
-                  <button id="image-modal-close1" class="modal-close"></button>
+                  <button id="image-modal-close1" className="modal-close"></button>
                 </div>
                 <br>
-                <button class="button" id="showModal1">Sign Up</button>
+                <button className="button" id="showModal1">Sign Up</button>
               </div>
             </div>
       
@@ -151,10 +151,10 @@ imageModalCloseBtn.addEventListener('click', function(){
           </div>
         </nav>
         <!--Will be draggable components, static for now-->
-        <nav class="navbar is-mobile" role="navigation" aria-label="main navigation">
+        <nav className="navbar is-mobile" role="navigation" aria-label="main navigation">
               
           <!-- Hamburger -->
-          <a role="button" id="burger" class="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+          <a role="button" id="burger" className="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
             data-target="navMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -162,61 +162,61 @@ imageModalCloseBtn.addEventListener('click', function(){
           </a>
         </div>
       
-        <div id="navbarMenu" class="navbar-menu is-pulled-left is-mobile">
-          <div class="navbar-start is-mobile">
-            <a href="#" class="navbar-item is-mobile">
+        <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
+          <div className="navbar-start is-mobile">
+            <a href="#" className="navbar-item is-mobile">
               Navbar
             </a>
           
-                <a href="#" class="navbar-item is-mobile">
+                <a href="#" className="navbar-item is-mobile">
                   Message
                 </a>
-                <a href="#" class="navbar-item is-mobile">
+                <a href="#" className="navbar-item is-mobile">
                   Card
                 </a>
-                <a href="#" class="navbar-item is-mobile">
+                <a href="#" className="navbar-item is-mobile">
                   Hero
                 </a>
-                <a href="#" class="navbar-item is-mobile">
+                <a href="#" className="navbar-item is-mobile">
                   Container
                 </a>
-                <a href="#" class="navbar-item is-mobile">
+                <a href="#" className="navbar-item is-mobile">
                   Image Box
                 </a>
-                <a href="#" class="navbar-item is-mobile">
+                <a href="#" className="navbar-item is-mobile">
                   Footer
                 </a>
               </div>
             </div>
           </div>
-          <div class="navbar-end">
+          <div className="navbar-end">
       </nav>
       
         <!-- Body Grid -->
-        <div id="grid" class="container is-mobile">
-        <div class="cell cell-1">1</div>
-        <div class="cell cell-2">2</div>
-        <div class="cell cell-3">3</div>
-        <div class="cell cell-4">4</div>
-        <div class="cell cell-5">5</div>
-        <div class="cell cell-6">6</div>
-        <div class="cell cell-7">7</div>
-        <div class="cell cell-8">8</div>
-        <div class="cell cell-9">9</div>
+        <div id="grid" className="container is-mobile">
+        <div className="cell cell-1">1</div>
+        <div className="cell cell-2">2</div>
+        <div className="cell cell-3">3</div>
+        <div className="cell cell-4">4</div>
+        <div className="cell cell-5">5</div>
+        <div className="cell cell-6">6</div>
+        <div className="cell cell-7">7</div>
+        <div className="cell cell-8">8</div>
+        <div className="cell cell-9">9</div>
         </div>
         <!-- Modals -->
       
         <!-- Footer -->
-        <footer class="footer">
-          <div class="content has-text-centered">
-            <i class="fab fa-facebook icon is-large is-primary"></i>
-            <i class="fab fa-instagram icon is-large is-primary"></i>
-            <i class="fab fa-github icon is-large is-primary"></i>
+        <footer className="footer">
+          <div className="content has-text-centered">
+            <i className="fab fa-facebook icon is-large is-primary"></i>
+            <i className="fab fa-instagram icon is-large is-primary"></i>
+            <i className="fab fa-github icon is-large is-primary"></i>
           </div>
       
-          <!-- <div class="container">
-            <div class="content has-text-centered">
-              <div class="fab fa-facebook is-primary"></div>
+          <!-- <div className="container">
+            <div className="content has-text-centered">
+              <div className="fab fa-facebook is-primary"></div>
             </div>
           </div> -->
         </footer>
