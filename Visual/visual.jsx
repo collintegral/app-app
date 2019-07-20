@@ -37,184 +37,207 @@ imageModalCloseBtn.addEventListener('click', function(){
 });
     render() {
         return(
-            <nav class="navbar is-mobile" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="https://bulma.io">
-                <img src="Logo.PNG">
-              </a>
-        {/* <!-- Hamburger --> */}
-              <a role="button" id="burger" class="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
-                data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-        
-            <div id="navbarMenu" class="navbar-menu is-pulled-left is-mobile">
-              <div class="navbar-start is-mobile">
-                <a href="#" class="navbar-item is-mobile">
-                  Home
+          nav class="navbar is-mobile" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="Logo.PNG">
+            </a>
+      <!-- Hamburger -->
+            <a role="button" id="burger" class="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+              data-target="navMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+      
+          <div id="navbarMenu" class="navbar-menu is-pulled-left is-mobile">
+            <div class="navbar-start is-mobile">     
+              <div class="navbar-item has-dropdown is-hoverable is-mobile">
+                <a href="#" class="navbar-link is-mobile">
+                 The App-App
                 </a>
-        
-                <a href="#" class="navbar-item is-mobile">
-                  Documentation
-                </a>
-                <div class="navbar-item has-dropdown is-hoverable is-mobile">
-                  <a href="#" class="navbar-link is-mobile">
-                    More
+                <div class="navbar-dropdown is-mobile">            
+                  <a href="#" class="navbar-item is-mobile">
+                    
                   </a>
-                  <div class="navbar-dropdown is-mobile">
-                    <a href="#" class="navbar-item is-mobile">
-                      About
-                    </a>
-                    <a href="#" class="navbar-item is-mobile">
-                      Jobs
-                    </a>
-                    <a href="#" class="navbar-item is-mobile">
-                      Contact
-                    </a>
-                    <hr class="navbar-divider is-mobile">
-                    <a href="#" class="navbar-item is-mobile">
-                      Report an issue
-                    </a>
-                  </div>
+                  <hr class="navbar-divider is-mobile">
                 </div>
               </div>
-              <div class="navbar-end">
-                <div class="navbar-item">
-                  <!--Modal-->
-                  <div id="image-modal" class="modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                      <div class="modal-card">
-        
-                        {/* <!----> */}
-                        <article class="message">
-                          <div class="message-header">
-                            <p>Welcome!</p>
-                          </div>
-                          <div class="message-body">
-                            <form action="/login" method="post">
-                              <div>
-                                <label>Username:</label>
-                                <input type="text" name="username" />
-                              </div>
-                              <div>
-                                <label>Password:</label>
-                                <input type="password" name="password" />
-                              </div>
-                              <div>
-                                <input type="submit" value="Log In" />
-                              </div>
-                            </form>
-                          </div>
-                        </article>
-                        {/* <!----> */}
-        
-                      </div>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <!--Modal-->
+                <div id="image-modal" class="modal">
+                  <div class="modal-background"></div>
+                  <div class="modal-content">
+                    <div class="modal-card">
+      
+                      <!---->
+                      <article class="message">
+                        <div class="message-header">
+                          <p>Welcome!</p>
+                        </div>
+                        <div class="message-body">
+                          <form action="/login" method="post">
+                            <div>
+                              <label>Username:</label>
+                              <input type="text" name="username" />
+                            </div>
+                            <div>
+                              <label>Password:</label>
+                              <input type="password" name="password" />
+                            </div>
+                            <div>
+                              <input type="submit" value="Log In" />
+                            </div>
+                          </form>
+                        </div>
+                      </article>
+                      <!---->
+      
                     </div>
-                    <button id="image-modal-close" class="modal-close"></button>
                   </div>
-                  <br>
-                  <button class="button" id="showModal">Log In</button>
+                  <button id="image-modal-close" class="modal-close"></button>
                 </div>
-        
-                <div class="navbar-item">
-                  {/* <!--Modal--> */}
-                  <div id="image-modal1" class="modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                      <div class="modal-card">
-        
-                        {/* <!----> */}
-                        <article class="message">
-                          <div class="message-header">
-                            <p>Welcome!</p>
-                          </div>
-                          <div class="message-body">
-                            <form action="/login" method="post">
-                              <div>
-                                <label>Username:</label>
-                                <input type="text" name="username" />
-                              </div>
-                              <div>
-                                <label>Password:</label>
-                                <input type="password" name="password" />
-                              </div>
-                              <div>
-                                  <label>Confirm Password:</label>
-                                  <input type="password" name="password" />
-                                </div>
-                              <div>
-                                <input type="submit" value="Log In" />
-                              </div>
-                            </form>
-                          </div>
-                        </article>
-                        {/* <!----> */}
-        
-                      </div>
-                    </div>
-                    <button id="image-modal-close1" class="modal-close"></button>
-                  </div>
-                  <br>
-                  <button class="button" id="showModal1">Sign Up</button>
-                </div>
+                <br>
+                <button class="button" id="showModal">Log In</button>
               </div>
-        
+      
+              <div class="navbar-item">
+                <!--Modal-->
+                <div id="image-modal1" class="modal">
+                  <div class="modal-background"></div>
+                  <div class="modal-content">
+                    <div class="modal-card">
+      
+                      <!---->
+                      <article class="message">
+                        <div class="message-header">
+                          <p>Welcome!</p>
+                        </div>
+                        <div class="message-body">
+                          <form action="/login" method="post">
+                            <div>
+                              <label>Username:</label>
+                              <input type="text" name="username" />
+                            </div>
+                            <div>
+                              <label>Password:</label>
+                              <input type="password" name="password" />
+                            </div>
+                            <div>
+                                <label>Confirm Password:</label>
+                                <input type="password" name="password" />
+                              </div>
+                            <div>
+                              <input type="submit" value="Log In" />
+                            </div>
+                          </form>
+                        </div>
+                      </article>
+                      <!---->
+      
+                    </div>
+                  </div>
+                  <button id="image-modal-close1" class="modal-close"></button>
+                </div>
+                <br>
+                <button class="button" id="showModal1">Sign Up</button>
+              </div>
             </div>
-            </div>
-          </nav>
-        
-        
-          <!-- Body Grid -->
-          <div id="grid" class="container is-mobile">
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="cell cell-1">1</div>
-            </div>
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="cell cell-2">2</div>
-            </div>
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="cell cell-3">3</div>
-            </div>
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="cell cell-4">4</div>
-            </div>
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="cell cell-5">5</div>
-            </div>
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="cell cell-6">6</div>
-            </div>
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="cell cell-7">7</div>
-            </div>
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="cell cell-8">8</div>
-            </div>
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div class="cell cell-9">9</div>
+      
+          </div>
+          </div>
+        </nav>
+        <!--Will be draggable components, static for now-->
+        <nav class="navbar is-mobile" role="navigation" aria-label="main navigation">
+              
+          <!-- Hamburger -->
+          <a role="button" id="burger" class="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+            data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarMenu" class="navbar-menu is-pulled-left is-mobile">
+          <div class="navbar-start is-mobile">
+            <a href="#" class="navbar-item is-mobile">
+              Navbar
+            </a>
+          
+                <a href="#" class="navbar-item is-mobile">
+                  Message
+                </a>
+                <a href="#" class="navbar-item is-mobile">
+                  Card
+                </a>
+                <a href="#" class="navbar-item is-mobile">
+                  Hero
+                </a>
+                <a href="#" class="navbar-item is-mobile">
+                  Container
+                </a>
+                <a href="#" class="navbar-item is-mobile">
+                  Image Box
+                </a>
+                <a href="#" class="navbar-item is-mobile">
+                  Footer
+                </a>
+              </div>
             </div>
           </div>
-
-        
-          {/* <!-- Footer --> */}
-          <footer class="footer">
+          <div class="navbar-end">
+      </nav>
+      
+        <!-- Body Grid -->
+        <div id="grid" class="container is-mobile">
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="cell cell-1">1</div>
+          </div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="cell cell-2">2</div>
+          </div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="cell cell-3">3</div>
+          </div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="cell cell-4">4</div>
+          </div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="cell cell-5">5</div>
+          </div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="cell cell-6">6</div>
+          </div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="cell cell-7">7</div>
+          </div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="cell cell-8">8</div>
+          </div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div class="cell cell-9">9</div>
+          </div>
+        </div>
+        <!-- Modals -->
+      
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="content has-text-centered">
+            <i class="fab fa-facebook icon is-large is-primary"></i>
+            <i class="fab fa-instagram icon is-large is-primary"></i>
+            <i class="fab fa-github icon is-large is-primary"></i>
+          </div>
+      
+          <!-- <div class="container">
             <div class="content has-text-centered">
-              <i class="fab fa-facebook icon is-large is-primary"></i>
-              <i class="fab fa-instagram icon is-large is-primary"></i>
-              <i class="fab fa-github icon is-large is-primary"></i>
+              <div class="fab fa-facebook is-primary"></div>
             </div>
-        
-            <div class="container">
-              <div class="content has-text-centered">
-                <div class="fab fa-facebook is-primary"></div>
-              </div>
-            </div> -->
-          </footer>   
-
+          </div> -->
+        </footer>
         )
     }
 }
