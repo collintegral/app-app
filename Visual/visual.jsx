@@ -37,12 +37,12 @@ imageModalCloseBtn.addEventListener('click', function(){
 });
     render() {
         return(
-          nav className="navbar is-mobile" role="navigation" aria-label="main navigation">
+          <nav className="navbar is-mobile" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
             <a className="navbar-item" href="https://bulma.io">
               <img src="Logo.PNG">
             </a>
-      <!-- Hamburger -->
+      {/* <!-- Hamburger --> */}
             <a role="button" id="burger" className="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
               data-target="navMenu">
               <span aria-hidden="true"></span>
@@ -67,13 +67,13 @@ imageModalCloseBtn.addEventListener('click', function(){
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
-                <!--Modal-->
+                {/* <!--Modal--> */}
                 <div id="image-modal" className="modal">
                   <div className="modal-background"></div>
                   <div className="modal-content">
                     <div className="modal-card">
       
-                      <!---->
+                      {/* <!----> */}
                       <article className="message">
                         <div className="message-header">
                           <p>Welcome!</p>
@@ -94,7 +94,7 @@ imageModalCloseBtn.addEventListener('click', function(){
                           </form>
                         </div>
                       </article>
-                      <!---->
+                      {/* <!----> */}
       
                     </div>
                   </div>
@@ -105,13 +105,13 @@ imageModalCloseBtn.addEventListener('click', function(){
               </div>
       
               <div className="navbar-item">
-                <!--Modal-->
+                {/* <!--Modal--> */}
                 <div id="image-modal1" className="modal">
                   <div className="modal-background"></div>
                   <div className="modal-content">
                     <div className="modal-card">
       
-                      <!---->
+                      {/* <!----> */}
                       <article className="message">
                         <div className="message-header">
                           <p>Welcome!</p>
@@ -136,7 +136,7 @@ imageModalCloseBtn.addEventListener('click', function(){
                           </form>
                         </div>
                       </article>
-                      <!---->
+                      {/* <!----> */}
       
                     </div>
                   </div>
@@ -150,10 +150,10 @@ imageModalCloseBtn.addEventListener('click', function(){
           </div>
           </div>
         </nav>
-        <!--Will be draggable components, static for now-->
+        {/* <!--Will be draggable components, static for now--> */}
         <nav className="navbar is-mobile" role="navigation" aria-label="main navigation">
               
-          <!-- Hamburger -->
+          {/* <!-- Hamburger --> */}
           <a role="button" id="burger" className="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
             data-target="navMenu">
             <span aria-hidden="true"></span>
@@ -192,7 +192,7 @@ imageModalCloseBtn.addEventListener('click', function(){
           <div className="navbar-end">
       </nav>
       
-        <!-- Body Grid -->
+        {/* <!-- Body Grid --> */}
         <div id="grid" className="container is-mobile">
         <div className="cell cell-1">1</div>
         <div className="cell cell-2">2</div>
@@ -204,9 +204,8 @@ imageModalCloseBtn.addEventListener('click', function(){
         <div className="cell cell-8">8</div>
         <div className="cell cell-9">9</div>
         </div>
-        <!-- Modals -->
       
-        <!-- Footer -->
+        {/* <!-- Footer --> */}
         <footer className="footer">
           <div className="content has-text-centered">
             <i className="fab fa-facebook icon is-large is-primary"></i>
