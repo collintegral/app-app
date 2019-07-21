@@ -14,7 +14,7 @@ const ComponentSchema = new Schema ({
     }
     , compSize: {
         type: String
-        , enum: [full, half, quarter]
+        , enum: ["full", "half", "quarter"]
     }
     , compContent: String
 });
