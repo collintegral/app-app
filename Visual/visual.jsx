@@ -45,13 +45,13 @@ render() {
           <img src="Logo.PNG"> </img>
         </a>
         {/* Hamburger */}
-        <a role="button" id="burger" className="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+        {/* <a role="button" id="burger" className="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
           data-target="navMenu">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
-      </div>
+      </div> */}
 
       <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
         <div className="navbar-start is-mobile">
@@ -159,26 +159,26 @@ render() {
           </a>
     <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
       <div className="navbar-start is-mobile">
-        <a href="#" className="navbar-item is-mobile">
+        <a href="#" className="navbar-item is-mobile is-hoverable">
           Navbar
             </a>
 
-        <a href="#" className="navbar-item is-mobile">
+        <a href="#" className="navbar-item is-mobile is-hoverable">
           Message
                 </a>
-        <a href="#" className="navbar-item is-mobile">
+        <a href="#" className="navbar-item is-mobile is-hoverable">
           Card
                 </a>
-        <a href="#" className="navbar-item is-mobile">
+        <a href="#" className="navbar-item is-mobile is-hoverable">
           Hero
                 </a>
-        <a href="#" className="navbar-item is-mobile">
+        <a href="#" className="navbar-item is-mobile is-hoverable">
           Container
                 </a>
-        <a href="#" className="navbar-item is-mobile">
+        <a href="#" className="navbar-item is-mobile is-hoverable">
           Image Box
                 </a>
-        <a href="#" className="navbar-item is-mobile">
+        <a href="#" className="navbar-item is-mobile is-hoverable">
           Footer
                 </a>
       </div>
