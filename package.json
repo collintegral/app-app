@@ -15,7 +15,8 @@
     "react-dom": "^16.8.6",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "yarn-install": "^1.0.0"
   },
   "engines": {
     "node": "10.15.3"
