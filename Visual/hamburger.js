@@ -46,3 +46,5 @@ btn.addEventListener('click', function(){
 imageModalCloseBtn.addEventListener('click', function(){
   modalDlg.classList.remove('is-active');
 });
+
+//Drag and drop js
