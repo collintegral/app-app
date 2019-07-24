@@ -1,6 +1,8 @@
 const db = require("../models");
 
 module.exports = (app) => {
+    const emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
     // Get all contents of one model
     app.get("/api/listall/:request", (req, res) => {
         if (req.params.request !== "User") {
@@ -18,18 +20,30 @@ module.exports = (app) => {
     );
 
     app.post("/signup", (req, res) => {
-        // Check validity of sign-up info
-        // - email is valid
-        // - username contains valid characters
-        // - password is long enough and has a variety of characters
-        
-        db.User.findOrCreate({ email: req.body.email }, req.body, (err, click, created) => {
-            if (created) {
-                // Successful user generation
-            }
-            else {
-                //email already exists!
-            }
-        })
-    })
+        if (req.body.email === "" || req.body.username === "" || req.body.password === "" || req.body.confpassword === "") {
+            return "errblank";
+        }
+        else if (!emailRegex.test(req.body.email)) {
+            return "errinvemail";
+        }
+        else if (req.body.password.includes(" ")) {
+            return "errspace";
+        }
+        else if (req.body.password != req.body.confpassword) {
+            return "errpasswords";
+        }
+        else if (req.body.password.trim().length < 6) {
+            return "errpasswordlength";
+        }
+        else {
+            db.User.findOrCreate({ email: req.body.email }, req.body, (err, click, created) => {
+                if (created) {
+                    return "success";
+                }
+                else {
+                    return "erralreadyused";
+                }
+            });
+        }
+    });
 }
