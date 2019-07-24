@@ -5,7 +5,7 @@ const cors = require('cors');
 const session = require('express-session');
 const mongoose = require('mongoose');
 
-const routes = require('./routes');
+const routes = require('./routes/modelRoutes');
 const passport = require('./config/passport');
 const corsOptions = require('./config/cors.js');
 

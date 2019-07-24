@@ -3,17 +3,12 @@ const Schema = mongoose.Schema;
 const uniqueValidator = require("mongoose-unique-validator");
 const bcrypt = require("bcrypt");
 const findOrCreate = require("mongoose-findorcreate");
+const db = require("../models");
 
 const UserSchema = new Schema({
-    userID: {
-        type: Number
-        , required: true
-        , unique: true
-    }
-    , username: {
+    username: {
         type: String
         , required: true
-        , unique: true
     }
     , email: {
         type: String
@@ -24,6 +19,7 @@ const UserSchema = new Schema({
         type: String
         , required: true
     }
+    , children: [db.Page]
 });
 
 UserSchema.plugin(uniqueValidator);

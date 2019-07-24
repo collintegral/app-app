@@ -19,8 +19,9 @@
       <a class="navbar-item" href="https://bulma.io">
         <img src="Logo.PNG">
       </a>
-<!-- Hamburger -->
-      <!-- <a role="button" id="burger" class="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+
+      <!-- Hamburger -->
+      <a role="button" id="burger" class="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
         data-target="navMenu">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -53,13 +54,13 @@
                 <!---->
                 <article class="message">
                   <div class="message-header">
-                    <p>Welcome!</p>
+                    <p>Log In</p>
                   </div>
                   <div class="message-body">
                     <form action="/login" method="post">
                       <div>
-                        <label>Username:</label>
-                        <input type="text" name="username" />
+                        <label>Email:</label>
+                        <input type="text" name="email" />
                       </div>
                       <div>
                         <label>Password:</label>
@@ -91,10 +92,14 @@
                 <!---->
                 <article class="message">
                   <div class="message-header">
-                    <p>Welcome!</p>
+                    <p>Create Your Free Account</p>
                   </div>
                   <div class="message-body">
-                    <form action="/login" method="post">
+                    <form action="/signup" method="post">
+                      <div>
+                        <label>Email:</label>
+                        <input type="text" name="email" />
+                      </div>
                       <div>
                         <label>Username:</label>
                         <input type="text" name="username" />
@@ -104,11 +109,11 @@
                         <input type="password" name="password" />
                       </div>
                       <div>
-                          <label>Confirm Password:</label>
-                          <input type="password" name="password" />
-                        </div>
+                        <label>Confirm Password:</label>
+                        <input type="password" name="confpassword" />
+                      </div>
                       <div>
-                        <input type="submit" value="Log In" />
+                        <input type="submit" value="Sign Up" />
                       </div>
                     </form>
                   </div>
@@ -170,6 +175,7 @@
 
   <!-- Body Grid -->
   <div id="grid" class="container is-mobile">
+
         <div class="cell cell-1">1</div>
         <div class="cell cell-2">2</div>
         <div class="cell cell-3">3</div>
@@ -179,6 +185,7 @@
         <div class="cell cell-7">7</div>
         <div class="cell cell-8">8</div>
         <div class="cell cell-9">9</div>
+
   </div>
   <!-- Modals -->
 
