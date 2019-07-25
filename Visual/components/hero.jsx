@@ -1,13 +1,13 @@
 import React, { Component } from 'react';class App extends Component {
     render() {
       return (
-        <section class="hero">
-        <div class="hero-body">
+        <section className="hero">
+        <div className="hero-body">
           <div class="container">
-            <h1 class="title">
+            <h1 className="title">
               Hero title
             </h1>
-            <h2 class="subtitle">
+            <h2 className="subtitle">
               Hero subtitle
             </h2>
           </div>
