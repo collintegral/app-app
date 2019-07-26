@@ -53,11 +53,12 @@ class App extends Component {
         </a>}
       </div> */}
 
-            <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
-              <div className="navbar-start is-mobile">
-                <div className="navbar-item has-dropdown is-hoverable is-mobile">
-                  <a href="#" className="navbar-link is-mobile">
-                    The App-App
+      <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
+        <div className="navbar-start is-mobile">
+          <div className="navbar-item is-hoverable is-mobile">
+            <a href="#" className="navbar-link is-mobile">
+              The App-App
+
                 </a>
                   <div className="navbar-dropdown is-mobile">
                     <a href="#" className="navbar-item is-mobile">
@@ -152,17 +153,21 @@ class App extends Component {
               </div>
             </div>
           </div>
-        </nav>
 
-        {/* <!--Will be draggable components, static for now--> */}
-        < nav className="navbar is-mobile" role="navigation" aria- label="main navigation">
+        </div>
+      </div>
+      </div>
+    </nav>
+    {/* <!--Will be draggable components, static for now--> */ }
+    < nav className= "navbar is-mobile" role= "navigation" aria- label="main navigation">
 
-          {/* <!-- Hamburger --> */}
-          < a role="button" id="burger" className="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
-            data-target="navMenu" >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+      {/* <!-- Hamburger --> */ }
+      < a role = "button" id = "burger" className = "navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+  data-target="navMenu" >
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+
           </a>
           <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
             <div className="navbar-start is-mobile">
@@ -188,34 +193,36 @@ class App extends Component {
               <a href="#" class="navbar-item is-mobile is-hoverable">
                 Footer
                 </a>
-            </div>
-          </div>
-          <div className="navbar-end"></div>
-        </nav>
+      </div>
+    </div>
+    <div className="navbar-end"></div>
+    </nav>
 
-        {/* <!-- Body Grid --> */}
-        <div id="grid" className="container is-mobile">
-          <div className="cell cell-1">1</div>
-          <div className="cell cell-2">2</div>
-          <div className="cell cell-3">3</div>
-          <div className="cell cell-4">4</div>
-          <div className="cell cell-5">5</div>
-          <div className="cell cell-6">6</div>
-          <div className="cell cell-7">7</div>
-          <div className="cell cell-8">8</div>
-          <div className="cell cell-9">9</div>
-        </div>
+  {/* <!-- Body Grid --> */ }
+  <div id="grid" className="container is-mobile">
+    <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div className="cell cell-1" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">1</div>
+    <div className="cell cell-2" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">2</div>
+    <div className="cell cell-3" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">3</div>
+    <div className="cell cell-4" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">4</div>
+    <div className="cell cell-5" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">5</div>
+    <div className="cell cell-6" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">6</div>
+    <div className="cell cell-7" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">7</div>
+    <div className="cell cell-8" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">8</div>
+    <div className="cell cell-9" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">9</div>
+    </div>
+  </div>
 
+  {/* <!-- Footer --> */ }
+  <footer className="footer">
+    <div className="content has-text-centered">
+      <i className="fab fa-facebook icon is-large is-primary"></i>
+      <i className="fab fa-instagram icon is-large is-primary"></i>
+      <i className="fab fa-github icon is-large is-primary"></i>
+    </div>
 
-        {/* <!-- Footer --> */}
-        <footer className="footer">
-          <div className="content has-text-centered">
-            <i className="fab fa-facebook icon is-large is-primary"></i>
-            <i className="fab fa-instagram icon is-large is-primary"></i>
-            <i className="fab fa-github icon is-large is-primary"></i>
-          </div>
+    {/* <div className="container">
 
-          {/* <div className="container">
       <div className="content has-text-centered">
         <div className="fab fa-facebook is-primary"></div>
       </div>
