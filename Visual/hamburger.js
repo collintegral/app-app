@@ -28,22 +28,22 @@ $("#burger").click(() => {
 var btn = document.querySelector('#showModal');
 var modalDlg = document.querySelector('#image-modal');
 var imageModalCloseBtn = document.querySelector('#image-modal-close');
-btn.addEventListener('click', function(){
+btn.addEventListener('click', () => {
   modalDlg.classList.add('is-active');
 });
 
-imageModalCloseBtn.addEventListener('click', function(){
+imageModalCloseBtn.addEventListener('click', () => {
   modalDlg.classList.remove('is-active');
 });
 
 var btn = document.querySelector('#showModal1');
 var modalDlg = document.querySelector('#image-modal1');
 var imageModalCloseBtn = document.querySelector('#image-modal-close1');
-btn.addEventListener('click', function(){
+btn.addEventListener('click', () => {
   modalDlg.classList.add('is-active');
 });
 
-imageModalCloseBtn.addEventListener('click', function(){
+imageModalCloseBtn.addEventListener('click', () => {
   modalDlg.classList.remove('is-active');
 });
 

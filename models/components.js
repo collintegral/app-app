@@ -2,13 +2,9 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ComponentSchema = new Schema ({
-    , compName: {
-        type: String
-        , required: true
-    }
-    , compSize: {
+    compID: {
         type: Number
-        , enum: [1,2,3]
+        , required: true
     }
     , compPosition: {
         type: Number
