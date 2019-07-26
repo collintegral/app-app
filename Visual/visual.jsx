@@ -163,23 +163,23 @@ render() {
           Navbar
             </a>
 
-        <a href="#" className="navbar-item is-mobile is-hoverable">
-          Message
-                </a>
-        <a href="#" className="navbar-item is-mobile is-hoverable">
-          Card
-                </a>
-        <a href="#" className="navbar-item is-mobile is-hoverable">
-          Hero
-                </a>
-        <a href="#" className="navbar-item is-mobile is-hoverable">
-          Container
-                </a>
-        <a href="#" className="navbar-item is-mobile is-hoverable">
-          Image Box
-                </a>
-        <a href="#" className="navbar-item is-mobile is-hoverable">
-          Footer
+            <a href="./components/message.jsx" class="navbar-item is-mobile is-hoverable">
+            Message
+          </a>
+          <a href="./components/card.jsx" class="navbar-item is-mobile is-hoverable">
+            Card
+          </a>
+          <a href="./components/hero.jsx" class="navbar-item is-mobile is-hoverable">
+            Hero
+          </a>
+          <a href="./components/container.jsx" class="navbar-item is-mobile is-hoverable">
+            Container
+          </a>
+          <a href="./components/image-box.jsx" class="navbar-item is-mobile is-hoverable">
+            Image Box
+          </a>
+          <a href="#" class="navbar-item is-mobile is-hoverable">
+            Footer
                 </a>
       </div>
     </div>
