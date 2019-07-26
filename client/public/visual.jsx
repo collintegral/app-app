@@ -146,6 +146,7 @@ render() {
           </div>
         </div>
       </div>
+      </div>
     </nav>
     {/* <!--Will be draggable components, static for now--> */ }
     < nav className= "navbar is-mobile" role= "navigation" aria- label="main navigation">
