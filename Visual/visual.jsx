@@ -55,7 +55,7 @@ render() {
 
       <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
         <div className="navbar-start is-mobile">
-          <div className="navbar-item has-dropdown is-hoverable is-mobile">
+          <div className="navbar-item is-hoverable is-mobile">
             <a href="#" className="navbar-link is-mobile">
               The App-App
                 </a>
