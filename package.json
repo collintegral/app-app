@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": "server.js",
   "engines": {
-    "node": "12.x"
+    "node": "10.15.3"
   },
   "repository": {
     "type": "git",
@@ -14,19 +14,10 @@
   },
   "homepage": "http://TBD",
   "scripts": {
-    "start": "if-env NODE_ENV=production && yarn start:prod || yarn start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "yarn kill && concurrently \"nodemon\" \"yarn client\"",
-    "server": "yarn kill && nodemon",
-    "client": "cd client && yarn start",
-    "install": "cd client && yarn install",
-    "build": "cd client && yarn build",
-    "heroku-postbuild": "yarn build",
-    "kill": "kill-port 3001",
-    "lint": "eslint --quiet .",
-    "lint:fix": "eslint --fix .",
-    "tests": "yarn kill && NODE_ENV=test nyc --reporter=html --reporter=text mocha tests/**/*.spec.js --exit",
-    "test:coverage": "nyc report --reporter=text-lcov | coveralls"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "nodemonConfig": {
     "events": {
@@ -62,6 +53,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "bcrypt": "^3.0.6",
+    "bulma": "^0.7.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
@@ -79,16 +71,6 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "yarn-install": "^1.0.0"
-  },
-
-  "engines": {
-    "node": "10.15.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
