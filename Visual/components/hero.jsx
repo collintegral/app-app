@@ -3,7 +3,7 @@ import React, { Component } from 'react';class App extends Component {
       return (
         <section className="hero">
         <div className="hero-body">
-          <div class="container">
+          <div className="container">
             <h1 className="title">
               Hero title
             </h1>
