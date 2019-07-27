@@ -2,40 +2,6 @@ import React, { Component } from 'react';
 
 class App extends Component {
 
-  //   $("#burger").click(() => {
-  //     console.log("click");
-  //     if ($(".navbar-menu").css("display") == "block") {
-  //       console.log("close menu");
-  //       $(".navbar-menu").css("display", "none");
-  //     } else {
-  //       console.log("open menu");
-  //       $(".navbar-menu").css("display", "block");
-  //     }
-  //   });
-
-  // //modal
-
-  // var btn = document.querySelector('#showModal');
-  // var modalDlg = document.querySelector('#image-modal');
-  // var imageModalCloseBtn = document.querySelector('#image-modal-close');
-  // btn.addEventListener('click', function () {
-  //   modalDlg.classList.add('is-active');
-  // });
-
-  // imageModalCloseBtn.addEventListener('click', function () {
-  //   modalDlg.classList.remove('is-active');
-  // });
-
-  // var btn = document.querySelector('#showModal1');
-  // var modalDlg = document.querySelector('#image-modal1');
-  // var imageModalCloseBtn = document.querySelector('#image-modal-close1');
-  // btn.addEventListener('click', function () {
-  //   modalDlg.classList.add('is-active');
-  // });
-
-  // imageModalCloseBtn.addEventListener('click', function () {
-  //   modalDlg.classList.remove('is-active');
-  // });
   render() {
     return (
       <div>
@@ -217,16 +183,10 @@ class App extends Component {
               <i className="fab fa-github icon is-large is-primary"></i>
             </div>
 
-            {/* <div className="container">
-
-      <div className="content has-text-centered">
-        <div className="fab fa-facebook is-primary"></div>
-      </div>
-    </div> */}
           </footer >
         </nav>
       </div>
-    )
+  )
   }
 }
 
