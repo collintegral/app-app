@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/collintegral/app-app.git"
   },
-  "homepage": "http://TBD",
+  "homepage": "https://the-app-app.herokuapp.com/client",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -38,7 +38,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-// Load up the mongoose server  
+// Load up the mongoose server
 mongoose.connect('mongodb://localhost/appApp', { useNewUrlParser: true });
 
 const server = app.listen(PORT, () => {
