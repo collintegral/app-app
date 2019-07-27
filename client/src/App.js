@@ -138,22 +138,22 @@ class App extends Component {
                 Navbar
             </a>
 
-              <a href="./components/message.jsx" class="navbar-item is-mobile is-hoverable">
+              <a href="./components/message.jsx" className="navbar-item is-mobile is-hoverable">
                 Message
           </a>
-              <a href="./components/card.jsx" class="navbar-item is-mobile is-hoverable">
+              <a href="./components/card.jsx" className="navbar-item is-mobile is-hoverable">
                 Card
           </a>
-              <a href="./components/hero.jsx" class="navbar-item is-mobile is-hoverable">
+              <a href="./components/hero.jsx" className="navbar-item is-mobile is-hoverable">
                 Hero
           </a>
-              <a href="./components/container.jsx" class="navbar-item is-mobile is-hoverable">
+              <a href="./components/container.jsx" className="navbar-item is-mobile is-hoverable">
                 Container
           </a>
-              <a href="./components/image-box.jsx" class="navbar-item is-mobile is-hoverable">
+              <a href="./components/image-box.jsx" className="navbar-item is-mobile is-hoverable">
                 Image Box
           </a>
-              <a href="#" class="navbar-item is-mobile is-hoverable">
+              <a href="#" className="navbar-item is-mobile is-hoverable">
                 Footer
                 </a>
             </div>
@@ -162,16 +162,16 @@ class App extends Component {
 
           {/* <!-- Body Grid --> */}
           < div id="grid" className="container is-mobile" >
-            <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <div className="cell cell-1" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">1</div>
-              <div className="cell cell-2" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">2</div>
-              <div className="cell cell-3" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">3</div>
-              <div className="cell cell-4" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">4</div>
-              <div className="cell cell-5" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">5</div>
-              <div className="cell cell-6" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">6</div>
-              <div className="cell cell-7" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">7</div>
-              <div className="cell cell-8" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">8</div>
-              <div className="cell cell-9" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">9</div>
+            <div className="droptarget" onDrop="drop(event)" onDragOver="allowDrop(event)">
+              <div className="cell cell-1" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">1</div>
+              <div className="cell cell-2" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">2</div>
+              <div className="cell cell-3" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">3</div>
+              <div className="cell cell-4" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">4</div>
+              <div className="cell cell-5" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">5</div>
+              <div className="cell cell-6" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">6</div>
+              <div className="cell cell-7" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">7</div>
+              <div className="cell cell-8" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">8</div>
+              <div className="cell cell-9" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">9</div>
             </div>
           </div >
 
