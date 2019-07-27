@@ -1,11 +1,11 @@
 import React, { Component } from 'react';class App extends Component {
     render() {
       return (
-        <article class="message">
+        <article className="message">
         <div class="message-header">
-          <button class="delete" aria-label="delete"></button>
+          <button className="delete" aria-label="delete"></button>
         </div>
-        <div class="message-body">
+        <div className="message-body">
           
         </div>
       </article>
