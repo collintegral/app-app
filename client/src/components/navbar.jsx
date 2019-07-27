@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+class Navbar extends Component {
   render() {
     return (
       <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -32,3 +32,4 @@ class App extends Component {
     )
   }
 }
+export default Navbar;
