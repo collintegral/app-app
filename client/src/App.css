@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +30,114 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  overflow:hidden;
+} */
+.footer{
+  padding: 10px;
+  margin-top: 10px;
 }
+/* Grid  */
+
+.container {
+  /* height: 90vh; */
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr;                  
+  }
+.cell{
+  color: white;
+ font-size: 3rem;
+ text-align: center;
+ padding: 4rem;
+}
+
+.cell-1{
+background: deepskyblue;
+}
+.cell-2{
+  background: orangered;
+}
+.cell-3{
+  background: royalblue;
+}
+.cell-4{
+  background: red;
+}
+.cell-5{
+  background: green;
+}
+.cell-6{
+  background: blueviolet;
+}
+.cell-7{
+  background: coral;
+}
+.cell-8{
+  background: lightseagreen;
+}
+.cell-9{
+  background: maroon;
+}
+/* Hover */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* Hamburger */
+.burger{
+  display: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+@media only screen and (max-width:768px) {
+  .burger {
+      display: block !important;
+
+  }
+  .navbar-menu {
+      display: none;
+      position: absolute;
+      top: 0;
+  }
+}
+
+
