@@ -20,10 +20,10 @@ class App extends Component {
           <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
             <div className="navbar-start is-mobile">
               <div className="navbar-item is-hoverable is-mobile">
-                <a href="#" className="navbar-link is-mobile">
+                <a href="#" className="navbar is-mobile">
                   The App-App
                 </a>
-                <div className="navbar-dropdown is-mobile">
+                <div className="navbar is-mobile">
                   <a href="#" className="navbar-item is-mobile">
                   </a>
                   <hr className="navbar-divider is-mobile" />
