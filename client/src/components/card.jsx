@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import React, { Component } from 'react';class App extends Component {
-    render() {
-      return (
-        <div class="card">
+class App extends Component {
+  render() {
+    return (
+      <div class="card">
         <div class="card-content">
           <p class="title">
             “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
@@ -24,6 +24,7 @@ import React, { Component } from 'react';class App extends Component {
             </span>
           </p>
         </footer>
-      </div> 
-      )}
-      }
+      </div>
+    )
+  }
+}
