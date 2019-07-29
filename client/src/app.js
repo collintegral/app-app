@@ -122,32 +122,56 @@ class App extends Component {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a >
-          <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
-            <div className="navbar-start is-mobile">
-              <a href="#" className="navbar-item is-mobile is-hoverable">
-                Navbar
-            </a>
-              <a href="./components/message.jsx" class="navbar-item is-mobile is-hoverable">
-                Message
-          </a>
-              <a href="./components/card.jsx" class="navbar-item is-mobile is-hoverable">
-                Card
-          </a>
-              <a href="./components/hero.jsx" class="navbar-item is-mobile is-hoverable">
-                Hero
-          </a>
-              <a href="./components/container.jsx" class="navbar-item is-mobile is-hoverable">
-                Container
-          </a>
-              <a href="./components/image-box.jsx" class="navbar-item is-mobile is-hoverable">
-                Image Box
-          </a>
-              <a href="#" class="navbar-item is-mobile is-hoverable">
-                Footer
+          {/* menu */}
+          <aside class="menu">
+            <p class="menu-label">
+              Components
+            </p>
+            <ul class="menu-list">
+              {/* navbar */}
+              <li>
+                <a href="#" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                  Navbar
                 </a>
-            </div>
-          </div>
-          <div className="navbar-end"></div>
+              </li>
+              {/* message box */}
+              <li>
+                <a href="./components/message.jsx" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                  Message
+                </a>
+              </li>
+              {/* card */}
+              <li>
+                <a href="./components/card.jsx" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                  Card
+                </a>
+              </li>
+              {/* hero */}
+              <li>
+                <a href="./components/hero.jsx" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                  Hero
+                </a>
+              </li>
+              {/* container */}
+              <li>
+                <a href="./components/container.jsx" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                  Container
+              </a>
+              </li>
+              {/* image box */}
+              <li>
+                <a href="./components/image-box.jsx" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                  Image Box
+                </a>
+              </li>
+              {/* footer */}
+              <li>
+                <a href="#" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                  Footer
+                </a>
+              </li>
+            </ul>
+          </aside>      
           {/* <!-- Body Grid --> */}
           < div id="grid" className="container is-mobile" >
             <div className="droptarget" ondrop="drop(event)" onDragover="allowDrop(event)">
@@ -171,8 +195,8 @@ class App extends Component {
             </div>
           </footer >
         </nav>
-      </div>
-  )
+      </div >
+    )
   }
 }
 export default App;
