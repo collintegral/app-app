@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+class ImageBox extends Component {
   render() {
     return (
       <figure class="image is-128x128">
@@ -9,3 +9,4 @@ class App extends Component {
     )
   }
 }
+export default ImageBox;
