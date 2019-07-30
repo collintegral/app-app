@@ -116,7 +116,7 @@ class App extends Component {
         {/* <!--Will be draggable components, static for now--> */}
         < nav className="navbar is-mobile" role="navigation" aria-label="main navigation" >
           {/* <!-- Hamburger --> */}
-          < a role="button" id="burger" className="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+          < a role="button" id="burger" className="navbar-burger burger is-mobile" aria-label="menu" aria-expanded="false"
             data-target="navMenu" >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -130,43 +130,43 @@ class App extends Component {
             <ul class="menu-list">
               {/* navbar */}
               <li>
-                <a href="#" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                <a href="#" className="is-mobile is-hoverable" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">
                   Navbar
                 </a>
               </li>
               {/* message box */}
               <li>
-                <a href="./components/message.jsx" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                <a href="./components/message.js" className="is-mobile is-hoverable" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">
                   Message
                 </a>
               </li>
               {/* card */}
               <li>
-                <a href="./components/card.jsx" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                <a href="./components/card.jsx" className="is-mobile is-hoverable" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">
                   Card
                 </a>
               </li>
               {/* hero */}
               <li>
-                <a href="./components/hero.jsx" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                <a href="./components/hero.jsx" className="is-mobile is-hoverable" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">
                   Hero
                 </a>
               </li>
               {/* container */}
               <li>
-                <a href="./components/container.jsx" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                <a href="./components/container.jsx" className="is-mobile is-hoverable" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">
                   Container
               </a>
               </li>
               {/* image box */}
               <li>
-                <a href="./components/image-box.jsx" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                <a href="./components/image-box.jsx" className="is-mobile is-hoverable" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">
                   Image Box
                 </a>
               </li>
               {/* footer */}
               <li>
-                <a href="#" className="is-mobile is-hoverable" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+                <a href="#" className="is-mobile is-hoverable" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">
                   Footer
                 </a>
               </li>
@@ -175,15 +175,15 @@ class App extends Component {
           {/* <!-- Body Grid --> */}
           < div id="grid" className="container is-mobile" >
             <div className="droptarget" ondrop="drop(event)" onDragover="allowDrop(event)">
-              <div className="cell cell-1" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">1</div>
-              <div className="cell cell-2" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">2</div>
-              <div className="cell cell-3" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">3</div>
-              <div className="cell cell-4" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">4</div>
-              <div className="cell cell-5" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">5</div>
-              <div className="cell cell-6" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">6</div>
-              <div className="cell cell-7" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">7</div>
-              <div className="cell cell-8" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">8</div>
-              <div className="cell cell-9" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragtarget">9</div>
+              <div className="cell cell-1" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">1</div>
+              <div className="cell cell-2" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">2</div>
+              <div className="cell cell-3" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">3</div>
+              <div className="cell cell-4" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">4</div>
+              <div className="cell cell-5" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">5</div>
+              <div className="cell cell-6" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">6</div>
+              <div className="cell cell-7" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">7</div>
+              <div className="cell cell-8" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">8</div>
+              <div className="cell cell-9" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">9</div>
             </div>
           </div >
           {/* <!-- Footer --> */}
