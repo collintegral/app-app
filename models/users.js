@@ -3,7 +3,6 @@ const Schema = mongoose.Schema;
 const uniqueValidator = require("mongoose-unique-validator");
 const bcrypt = require("bcrypt");
 const findOrCreate = require("mongoose-findorcreate");
-const db = require("../models");
 
 const UserSchema = new Schema({
     username: {
@@ -19,7 +18,7 @@ const UserSchema = new Schema({
         type: String
         , required: true
     }
-    , children: [db.Page]
+    , children: [Page]
 });
 
 UserSchema.plugin(uniqueValidator);
