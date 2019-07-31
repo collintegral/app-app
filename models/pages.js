@@ -4,7 +4,7 @@ const db = require("../models");
 
 const PageSchema = new Schema({
    pageName: {
-       type: Text
+       type: String
        , required: true
    }
    , children: [db.Tab]
