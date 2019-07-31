@@ -149,19 +149,45 @@ class App extends Component {
           </div>
           <div className="navbar-end"></div>
           {/* <!-- Body Grid --> */}
-          < div id="grid" className="container is-mobile" >
-            <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <div className="cell cell-1" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">1</div>
-              <div className="cell cell-2" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">2</div>
-              <div className="cell cell-3" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">3</div>
-              <div className="cell cell-4" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">4</div>
-              <div className="cell cell-5" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">5</div>
-              <div className="cell cell-6" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">6</div>
-              <div className="cell cell-7" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">7</div>
-              <div className="cell cell-8" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">8</div>
-              <div className="cell cell-9" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">9</div>
-            </div>
-          </div >
+
+   <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+{/* Row One */}
+   <div class="columns">
+  <div class="column cell-1">
+    First column
+  </div>
+  <div class="column cell-2">
+    Second column
+  </div>
+  <div class="column cell-3">
+    Third column
+  </div>
+</div>
+<div class="columns">
+  {/* Row Two */}
+  <div class="column cell-4">
+    First column
+  </div>
+  <div class="column cell-5">
+    Second column
+  </div>
+  <div class="column cell-6">
+    Third column
+  </div>
+  {/* Row Three */}
+</div><div class="columns">
+  <div class="column cell-7">
+    First column
+  </div>
+  <div class="column cell-8">
+    Second column
+  </div>
+  <div class="column cell-9">
+    Third column
+  </div>
+
+</div>
+   </div>
           {/* <!-- Footer --> */}
           < footer className="footer" >
             <div className="content has-text-centered">
