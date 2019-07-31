@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const db = require("../models");
+const Tab = require("./tabs.js");
 
 const PageSchema = new Schema({
    pageName: {
        type: String
        , required: true
    }
-   , children: [db.Tab]
+   , children: [Tab]
 });
 
 const Page = mongoose.model("Page", PageSchema);
