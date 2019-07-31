@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+class Hero extends Component {
   render() {
     return (
       <section class="hero">
@@ -18,3 +18,5 @@ class App extends Component {
     )
   }
 }
+
+export default Hero;
