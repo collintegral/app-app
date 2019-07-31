@@ -7,7 +7,7 @@ const TabSchema = new Schema({
        type: String
        , required: true
    }
-   , tabContents: [db.Component]
+   , tabContents: [Component]
 });
 
 const Tab = mongoose.model('Tab', TabSchema);
