@@ -10,5 +10,4 @@ const PageSchema = new Schema({
    , children: [Tab]
 });
 
-const Page = mongoose.model("Page", PageSchema);
 module.export = Page;

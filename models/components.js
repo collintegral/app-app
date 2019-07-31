@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const ComponentSchema = new Schema ({
+const ComponentSchema = new Schema({
     compID: {
         type: Number
         , required: true
@@ -12,7 +12,5 @@ const ComponentSchema = new Schema ({
     }
     , compContent: String
 });
-
-const Component = mongoose.model("Component", ComponentSchema)
 
 module.exports = Component;
