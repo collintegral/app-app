@@ -122,12 +122,15 @@ class App extends Component {
         {/* <!--Will be draggable components, static for now--> */}
         < nav className="navbar is-mobile" role="navigation" aria-label="main navigation" >
           {/* <!-- Hamburger --> */}
+
           < a role="button" id="burger" className="navbar-burger burger is-mobile" aria-label="menu" aria-expanded="false"
+
             data-target="navMenu" >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a >
+
           {/* menu */}
           <aside class="menu">
             <p class="menu-label">
@@ -192,6 +195,73 @@ class App extends Component {
               <div className="cell cell-9" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">9</div>
             </div>
           </div >
+          <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
+            <div className="navbar-start is-mobile">
+              <a href="#" className="navbar-item is-mobile is-hoverable">
+                Navbar
+            </a>
+              <a href="./components/message.jsx" class="navbar-item is-mobile is-hoverable">
+                Message
+          </a>
+              <a href="./components/card.jsx" class="navbar-item is-mobile is-hoverable">
+                Card
+          </a>
+              <a href="./components/hero.jsx" class="navbar-item is-mobile is-hoverable">
+                Hero
+          </a>
+              <a href="./components/container.jsx" class="navbar-item is-mobile is-hoverable">
+                Container
+          </a>
+              <a href="./components/image-box.jsx" class="navbar-item is-mobile is-hoverable">
+                Image Box
+          </a>
+              <a href="#" class="navbar-item is-mobile is-hoverable">
+                Footer
+                </a>
+            </div>
+          </div>
+          <div className="navbar-end"></div>
+          {/* <!-- Body Grid --> */}
+
+   <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+{/* Row One */}
+   <div class="columns">
+  <div class="column cell-1">
+    First column
+  </div>
+  <div class="column cell-2">
+    Second column
+  </div>
+  <div class="column cell-3">
+    Third column
+  </div>
+</div>
+<div class="columns">
+  {/* Row Two */}
+  <div class="column cell-4">
+    First column
+  </div>
+  <div class="column cell-5">
+    Second column
+  </div>
+  <div class="column cell-6">
+    Third column
+  </div>
+  {/* Row Three */}
+</div><div class="columns">
+  <div class="column cell-7">
+    First column
+  </div>
+  <div class="column cell-8">
+    Second column
+  </div>
+  <div class="column cell-9">
+    Third column
+  </div>
+
+</div>
+   </div>
+
           {/* <!-- Footer --> */}
           < footer className="footer" >
             <div className="content has-text-centered">
@@ -201,8 +271,10 @@ class App extends Component {
             </div>
           </footer >
         </nav>
+
       </div >
     )
   }
 }
 export default App;
+
