@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './app.css';
-import App from './app.js';
+import App from 'app.js';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
@@ -68,6 +68,7 @@ serviceWorker.unregister();
 //     signupmodalDlg.classList.remove('is-active');
 //   });
 
+
 // js for drag events outline found at https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_ondrag
 function dragStart(event) {
     event.dataTransfer.setData("Text", event.target.id);
@@ -81,3 +82,4 @@ function dragStart(event) {
     var data = event.dataTransfer.getData("Text");
     event.target.appendChild(document.getElementById(data));
   }  
+
