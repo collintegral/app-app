@@ -13,4 +13,4 @@ const ComponentSchema = new Schema({
     , compContent: String
 });
 
-module.exports = Component;
+module.exports = ComponentSchema;

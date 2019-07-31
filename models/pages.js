@@ -10,4 +10,4 @@ const PageSchema = new Schema({
    , children: [Tab]
 });
 
-module.export = Page;
+module.export = PageSchema;
