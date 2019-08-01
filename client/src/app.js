@@ -64,7 +64,7 @@ class App extends Component {
                   <button id="image-modal-close" className="modal-close"></button>
                 </div>
                 <br />
-                <button className="button" id="showModal">Log In</button>
+                <button className="button modal-button" id="showModal">Log In</button>
               </div>
               <div className="navbar-item">
                 {/* <!--Modal--> */}
@@ -108,7 +108,7 @@ class App extends Component {
                   <button id="image-modal-close1" className="modal-close"></button>
                 </div>
                 <br />
-                <button className="button" id="showModal1">Sign Up</button>
+                <button className="button modal-button" id="showModal1">Sign Up</button>
               </div>
             </div>
           </div>
@@ -126,11 +126,11 @@ class App extends Component {
           </a >
 
           {/* menu */}
-          <aside class="menu">
-            <p class="menu-label">
+          <aside className="menu">
+            <p className="menu-label">
               Components
             </p>
-            <ul class="menu-list">
+            <ul className="menu-list">
               {/* navbar */}
               <li>
                 <a href="#" className="is-mobile is-hoverable" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">
@@ -176,40 +176,40 @@ class App extends Component {
             </ul>
           </aside>      
           {/* <!-- Body Grid --> */}
-  <div class="container is-mobile">
+  <div className="level is-mobile">
   <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
 {/* Row One */}
-   <div class="columns">
-  <div class="box is-9  cell-1">
+   <div className="columns">
+  <div className="box is-9  cell-1">
     First column
   </div>
-  <div class="box is-9 cell-2">
+  <div className="box is-9 cell-2">
     Second column
   </div>
-  <div class="box is-9 cell-3">
+  <div className="box is-9 cell-3">
     Third column
   </div>
 </div>
-<div class="columns">
+<div className="columns">
   {/* Row Two */}
-  <div class="box is-9 cell-4">
+  <div className="box is-9 cell-4">
     First column
   </div>
-  <div class="box is-9 cell-5">
+  <div className="box is-9 cell-5">
     Second column
   </div>
-  <div class="box is-9 cell-6">
+  <div className="box is-9 cell-6">
     Third column
   </div>
   {/* Row Three */}
-</div><div class="columns">
-  <div class="box is-9 cell-7">
+</div><div className="columns">
+  <div className="box is-9 cell-7">
     First column
   </div>
-  <div class="box is-9 cell-8">
+  <div className="box is-9 cell-8">
     Second column
   </div>
-  <div class="box is-9 cell-9">
+  <div className="box is-9 cell-9">
     Third column
   </div>
 
