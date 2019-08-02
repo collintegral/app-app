@@ -1,4 +1,4 @@
-import { model } from 'mongoose';
+import model from 'mongoose';
 import ComponentSchema from './components';
 import Fonts from './fonts';
 import UserSchema from './users';
