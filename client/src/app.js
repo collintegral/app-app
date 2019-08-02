@@ -33,7 +33,7 @@ class App extends Component {
             <div className="navbar-end">
               <div className="navbar-item">
                 {/* <!--Modal--> */}
-                <div id="image-modal" className="modal">
+                <div id="image-modal" className="modal" modalDlg={document.querySelector('#image-modal')}>
                   <div className="modal-background"></div>
                   <div className="modal-content">
                     <div className="modal-card">
@@ -61,10 +61,19 @@ class App extends Component {
                       {/* <!----> */}
                     </div>
                   </div>
-                  <button id="image-modal-close" className="modal-close"></button>
+                  <button id="image-modal-close" className="modal-close" imageModalCloseBtn={document.querySelector('#image-modal-close')}></button>
                 </div>
                 <br />
+<<<<<<< HEAD
+                <button className="button" id="showModal"  btn={document.querySelector('#showModal')}
+                  {btn.addEventListener('click', () => {
+                    modalDlg.classList.add('is-active')
+                  })}>
+                  Log In
+                  </button>
+=======
                 <button className="button modal-button" id="showModal">Log In</button>
+>>>>>>> oldapp
               </div>
               <div className="navbar-item">
                 {/* <!--Modal--> */}
@@ -107,6 +116,7 @@ class App extends Component {
                   </div>
                   <button id="image-modal-close1" className="modal-close"></button>
                 </div>
+                
                 <br />
                 <button className="button modal-button" id="showModal1">Sign Up</button>
               </div>
