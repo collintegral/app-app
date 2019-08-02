@@ -1,23 +1,24 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+import mongoose, { model } from 'mongoose';
+
+const { Schema } = mongoose;
 
 const FontSchema = new Schema({
-    fontID: {
-        type: Number
-        , required: true
-        , unique: true
-    }
-    , fontName: {
-        type: String
-        , required: true
-        , unique: true
-    }
-    , fontLink: {
-        type: String
-        , required: true
-    }
+  fontID: {
+    type: Number,
+    required: true,
+    unique: true,
+  },
+  fontName: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  fontLink: {
+    type: String,
+    required: true,
+  },
 });
 
-const Font = mongoose.model("Font", FontSchema)
+const Font = model('Font', FontSchema);
 
-module.exports = Font;
+export default Font;

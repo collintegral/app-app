@@ -1,17 +1,16 @@
-const mongoose = require('mongoose');
+import { model } from 'mongoose';
+import ComponentSchema from './components';
+import Fonts from './fonts';
+import UserSchema from './users';
+import PageSchema from './pages';
+import TabSchema from './tabs';
 
-const ComponentSchema = require('./components');
-const Fonts = require('./fonts');
-const UserSchema = require('./users');
-const PageSchema = require('./pages');
-const TabSchema = require('./tabs');
+const User = model('User', UserSchema);
+const Page = model('Page', PageSchema);
+const Tab = model('Tab', TabSchema);
+const Component = model('Component', ComponentSchema);
 
-const User = mongoose.model('User', UserSchema);
-const Page = mongoose.model('Page', PageSchema);
-const Tab = mongoose.model('Tab', TabSchema);
-const Component = mongoose.model('Component', ComponentSchema);
-
-module.exports = {
+export default {
   Component,
   Fonts,
   User,

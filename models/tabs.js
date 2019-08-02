@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
-const Component = require('./components.js');
+import mongoose from 'mongoose';
+import Component from './components';
 
+const { Schema } = mongoose;
 const TabSchema = new Schema({
   tabName: {
     type: String,

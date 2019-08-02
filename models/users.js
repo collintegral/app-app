@@ -1,11 +1,10 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
+import uniqueValidator from 'mongoose-unique-validator';
+import { compareSync, hashSync } from 'bcrypt';
+import findOrCreate from 'mongoose-findorcreate';
+import Page from './pages';
 
-const Schema = mongoose.Schema;
-const uniqueValidator = require('mongoose-unique-validator');
-const bcrypt = require('bcrypt');
-const findOrCreate = require('mongoose-findorcreate');
-const Page = require('./pages.js');
-
+const { Schema } = mongoose;
 const UserSchema = new Schema({
   username: {
     type: String,
@@ -26,10 +25,10 @@ const UserSchema = new Schema({
 UserSchema.plugin(uniqueValidator);
 UserSchema.plugin(findOrCreate);
 
-UserSchema.methods.validPassword = password => bcrypt.compareSync(password, this.passwordHash);
+UserSchema.methods.validPassword = password => compareSync(password, this.passwordHash);
 
 UserSchema.virtual('password').set((value) => {
-  this.passwordHash = bcrypt.hashSync(value, 15);
+  this.passwordHash = hashSync(value, 15);
 });
 
 module.export = UserSchema;
