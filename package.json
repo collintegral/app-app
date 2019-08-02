@@ -4,7 +4,7 @@
   "description": "TBD",
   "author": "TBD",
   "license": "MIT",
-  "main": "server.js",
+  "web": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/collintegral/app-app.git"

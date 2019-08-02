@@ -1,18 +1,17 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+import mongoose from 'mongoose';
 
-const ComponentSchema = new Schema ({
-    compID: {
-        type: Number
-        , required: true
-    }
-    , compPosition: {
-        type: Number
-        , unique: true
-    }
-    , compContent: String
+const { Schema } = mongoose;
+
+const ComponentSchema = new Schema({
+  compID: {
+    type: Number,
+    required: true,
+  },
+  compPosition: {
+    type: Number,
+    unique: true,
+  },
+  compContent: String,
 });
 
-const Component = mongoose.model("Component", ComponentSchema)
-
-module.exports = Component;
+export default ComponentSchema;
