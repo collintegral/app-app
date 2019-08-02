@@ -64,12 +64,16 @@ class App extends Component {
                   <button id="image-modal-close" className="modal-close" imageModalCloseBtn={document.querySelector('#image-modal-close')}></button>
                 </div>
                 <br />
+<<<<<<< HEAD
                 <button className="button" id="showModal"  btn={document.querySelector('#showModal')}
                   {btn.addEventListener('click', () => {
                     modalDlg.classList.add('is-active')
                   })}>
                   Log In
                   </button>
+=======
+                <button className="button modal-button" id="showModal">Log In</button>
+>>>>>>> oldapp
               </div>
               <div className="navbar-item">
                 {/* <!--Modal--> */}
@@ -114,7 +118,7 @@ class App extends Component {
                 </div>
                 
                 <br />
-                <button className="button" id="showModal1">Sign Up</button>
+                <button className="button modal-button" id="showModal1">Sign Up</button>
               </div>
             </div>
           </div>
@@ -132,11 +136,11 @@ class App extends Component {
           </a >
 
           {/* menu */}
-          <aside class="menu">
-            <p class="menu-label">
+          <aside className="menu">
+            <p className="menu-label">
               Components
             </p>
-            <ul class="menu-list">
+            <ul className="menu-list">
               {/* navbar */}
               <li>
                 <a href="#" className="is-mobile is-hoverable" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">
@@ -182,99 +186,63 @@ class App extends Component {
             </ul>
           </aside>      
           {/* <!-- Body Grid --> */}
-          < div id="grid" className="container is-mobile" >
-            <div className="droptarget" ondrop="drop(event)" onDragover="allowDrop(event)">
-              <div className="cell cell-1" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">1</div>
-              <div className="cell cell-2" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">2</div>
-              <div className="cell cell-3" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">3</div>
-              <div className="cell cell-4" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">4</div>
-              <div className="cell cell-5" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">5</div>
-              <div className="cell cell-6" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">6</div>
-              <div className="cell cell-7" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">7</div>
-              <div className="cell cell-8" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">8</div>
-              <div className="cell cell-9" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">9</div>
-            </div>
-          </div >
-          <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
-            <div className="navbar-start is-mobile">
-              <a href="#" className="navbar-item is-mobile is-hoverable">
-                Navbar
-            </a>
-              <a href="./components/message.jsx" class="navbar-item is-mobile is-hoverable">
-                Message
-          </a>
-              <a href="./components/card.jsx" class="navbar-item is-mobile is-hoverable">
-                Card
-          </a>
-              <a href="./components/hero.jsx" class="navbar-item is-mobile is-hoverable">
-                Hero
-          </a>
-              <a href="./components/container.jsx" class="navbar-item is-mobile is-hoverable">
-                Container
-          </a>
-              <a href="./components/image-box.jsx" class="navbar-item is-mobile is-hoverable">
-                Image Box
-          </a>
-              <a href="#" class="navbar-item is-mobile is-hoverable">
-                Footer
-                </a>
-            </div>
-          </div>
-          <div className="navbar-end"></div>
-          {/* <!-- Body Grid --> */}
-
-   <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <div className="level is-mobile">
+  <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
 {/* Row One */}
-   <div class="columns">
-  <div class="column cell-1">
+   <div className="columns">
+  <div className="box is-9  cell-1">
     First column
   </div>
-  <div class="column cell-2">
+  <div className="box is-9 cell-2">
     Second column
   </div>
-  <div class="column cell-3">
+  <div className="box is-9 cell-3">
     Third column
   </div>
 </div>
-<div class="columns">
+<div className="columns">
   {/* Row Two */}
-  <div class="column cell-4">
+  <div className="box is-9 cell-4">
     First column
   </div>
-  <div class="column cell-5">
+  <div className="box is-9 cell-5">
     Second column
   </div>
-  <div class="column cell-6">
+  <div className="box is-9 cell-6">
     Third column
   </div>
   {/* Row Three */}
-</div><div class="columns">
-  <div class="column cell-7">
+</div><div className="columns">
+  <div className="box is-9 cell-7">
     First column
   </div>
-  <div class="column cell-8">
+  <div className="box is-9 cell-8">
     Second column
   </div>
-  <div class="column cell-9">
+  <div className="box is-9 cell-9">
     Third column
   </div>
 
 </div>
+
+  </div>
+
    </div>
 
           {/* <!-- Footer --> */}
-          < footer className="footer" >
+          {/* < footer className="footer" >
             <div className="content has-text-centered">
               <i className="fab fa-facebook icon is-large is-primary"></i>
               <i className="fab fa-instagram icon is-large is-primary"></i>
               <i className="fab fa-github icon is-large is-primary"></i>
             </div>
-          </footer >
+          </footer > */}
         </nav>
 
       </div >
     )
   }
 }
+
 export default App;
 
