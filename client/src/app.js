@@ -1,5 +1,19 @@
 import React, { Component } from 'react';
 class App extends Component {
+// drag and drop js
+   allowDrop = (ev) => {
+    ev.preventDefault();
+  };
+  
+  drag = (ev) => {
+    ev.dataTransfer.setData("text", ev.target.id);
+  };
+  
+  drop = (ev) => {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  };
   render() {
     return (
       <div>
@@ -64,10 +78,7 @@ class App extends Component {
                   <button id="image-modal-close" className="modal-close" imageModalCloseBtn={document.querySelector('#image-modal-close')}></button>
                 </div>
                 <br />
-                <button className="button" id="showModal"  btn={document.querySelector('#showModal')}
-                  {btn.addEventListener('click', () => {
-                    modalDlg.classList.add('is-active')
-                  })}>
+                <button className="button" id="showModal">
                   Log In
                   </button>
               </div>
@@ -130,7 +141,7 @@ class App extends Component {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a >
-
+          </nav>
           {/* menu */}
           <aside class="menu">
             <p class="menu-label">
@@ -182,10 +193,11 @@ class App extends Component {
             </ul>
           </aside>      
           {/* <!-- Body Grid --> */}
-          < div id="grid" className="container is-mobile" >
+          {/* < div id="grid" className="container is-mobile" >
             <div className="droptarget" ondrop="drop(event)" onDragover="allowDrop(event)">
               <div className="cell cell-1" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">1</div>
               <div className="cell cell-2" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">2</div>
+              <br></br>
               <div className="cell cell-3" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">3</div>
               <div className="cell cell-4" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">4</div>
               <div className="cell cell-5" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">5</div>
@@ -194,8 +206,8 @@ class App extends Component {
               <div className="cell cell-8" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">8</div>
               <div className="cell cell-9" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">9</div>
             </div>
-          </div >
-          <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
+          </div > */}
+          {/* <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
             <div className="navbar-start is-mobile">
               <a href="#" className="navbar-item is-mobile is-hoverable">
                 Navbar
@@ -219,43 +231,43 @@ class App extends Component {
                 Footer
                 </a>
             </div>
-          </div>
-          <div className="navbar-end"></div>
+          </div> */}
+          {/* <div className="navbar-end"></div> */}
           {/* <!-- Body Grid --> */}
 
-   <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+   <div>
 {/* Row One */}
-   <div class="columns">
-  <div class="column cell-1">
+   <div className="columns">
+  <div className="column cell-1" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     First column
   </div>
-  <div class="column cell-2">
+  <div className="column cell-2" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     Second column
   </div>
-  <div class="column cell-3">
+  <div className="column cell-3" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     Third column
   </div>
 </div>
-<div class="columns">
+<div className="columns">
   {/* Row Two */}
-  <div class="column cell-4">
+  <div className="column cell-4" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     First column
   </div>
-  <div class="column cell-5">
+  <div className="column cell-5" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     Second column
   </div>
-  <div class="column cell-6">
+  <div className="column cell-6" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     Third column
   </div>
   {/* Row Three */}
-</div><div class="columns">
-  <div class="column cell-7">
+</div><div className="columns">
+  <div className="column cell-7" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     First column
   </div>
-  <div class="column cell-8">
+  <div className="column cell-8" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     Second column
   </div>
-  <div class="column cell-9">
+  <div className="column cell-9" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     Third column
   </div>
 
@@ -270,7 +282,7 @@ class App extends Component {
               <i className="fab fa-github icon is-large is-primary"></i>
             </div>
           </footer >
-        </nav>
+      
 
       </div >
     )

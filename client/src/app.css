@@ -44,18 +44,20 @@
 }
 
 
-#grid {
+.columns {
   /* height: 90vh; */
-  margin: 2rem;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr;                  
+  grid-template-rows: 1fr 1fr 1fr;   
+             
   }
 .cell{
   color: white;
  font-size: 3rem;
  text-align: center;
- padding: 4rem;
+ padding: 4rem;  
+ float: right;
 }
 
 .cell-1{
