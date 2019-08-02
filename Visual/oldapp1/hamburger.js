@@ -12,14 +12,14 @@
 //   });
 
 
-const burger = document.querySelector("#burger")
-const navbarMenu = document.querySelector(".navbar-menu")
-
-burger.addEventListener(click, () => {
- if (navbarMenu.css("display") === "block") {
-  navbarMenu.css("display", "none");
+$("#burger").click(() => {
+    console.log("click");
+ if ($(".navbar-menu").css("display") == "block") {
+   console.log("close menu");
+   $(".navbar-menu").css("display", "none");
  } else {
-  navbarMenu.css("display", "block");
+   console.log("open menu");
+   $(".navbar-menu").css("display", "block");
  }
 });
 
