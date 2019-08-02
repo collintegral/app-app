@@ -78,9 +78,20 @@ class App extends Component {
                   <button id="image-modal-close" className="modal-close" imageModalCloseBtn={document.querySelector('#image-modal-close')}></button>
                 </div>
                 <br />
+<<<<<<< HEAD
                 <button className="button" id="showModal">
+=======
+<<<<<<< HEAD
+                <button className="button" id="showModal"  btn={document.querySelector('#showModal')}
+                  {btn.addEventListener('click', () => {
+                    modalDlg.classList.add('is-active')
+                  })}>
+>>>>>>> 1f4ee0a64a77eca2c8305d6319087673182ddbac
                   Log In
                   </button>
+=======
+                <button className="button modal-button" id="showModal">Log In</button>
+>>>>>>> oldapp
               </div>
               <div className="navbar-item">
                 {/* <!--Modal--> */}
@@ -125,7 +136,7 @@ class App extends Component {
                 </div>
                 
                 <br />
-                <button className="button" id="showModal1">Sign Up</button>
+                <button className="button modal-button" id="showModal1">Sign Up</button>
               </div>
             </div>
           </div>
@@ -143,11 +154,11 @@ class App extends Component {
           </a >
           </nav>
           {/* menu */}
-          <aside class="menu">
-            <p class="menu-label">
+          <aside className="menu">
+            <p className="menu-label">
               Components
             </p>
-            <ul class="menu-list">
+            <ul className="menu-list">
               {/* navbar */}
               <li>
                 <a href="#" className="is-mobile is-hoverable" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">
@@ -193,6 +204,7 @@ class App extends Component {
             </ul>
           </aside>      
           {/* <!-- Body Grid --> */}
+<<<<<<< HEAD
           {/* < div id="grid" className="container is-mobile" >
             <div className="droptarget" ondrop="drop(event)" onDragover="allowDrop(event)">
               <div className="cell cell-1" onDragStart="dragStart(event)" onDrag="dragging(event)" draggable="true" id="dragTarget">1</div>
@@ -245,11 +257,25 @@ class App extends Component {
     Second column
   </div>
   <div className="column cell-3" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
+=======
+  <div className="level is-mobile">
+  <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+{/* Row One */}
+   <div className="columns">
+  <div className="box is-9  cell-1">
+    First column
+  </div>
+  <div className="box is-9 cell-2">
+    Second column
+  </div>
+  <div className="box is-9 cell-3">
+>>>>>>> 1f4ee0a64a77eca2c8305d6319087673182ddbac
     Third column
   </div>
 </div>
 <div className="columns">
   {/* Row Two */}
+<<<<<<< HEAD
   <div className="column cell-4" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     First column
   </div>
@@ -257,10 +283,20 @@ class App extends Component {
     Second column
   </div>
   <div className="column cell-6" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
+=======
+  <div className="box is-9 cell-4">
+    First column
+  </div>
+  <div className="box is-9 cell-5">
+    Second column
+  </div>
+  <div className="box is-9 cell-6">
+>>>>>>> 1f4ee0a64a77eca2c8305d6319087673182ddbac
     Third column
   </div>
   {/* Row Three */}
 </div><div className="columns">
+<<<<<<< HEAD
   <div className="column cell-7" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
     First column
   </div>
@@ -268,25 +304,43 @@ class App extends Component {
     Second column
   </div>
   <div className="column cell-9" id="div1" onDrop="drop(event)" onDragOver="allowDrop(event)">
+=======
+  <div className="box is-9 cell-7">
+    First column
+  </div>
+  <div className="box is-9 cell-8">
+    Second column
+  </div>
+  <div className="box is-9 cell-9">
+>>>>>>> 1f4ee0a64a77eca2c8305d6319087673182ddbac
     Third column
   </div>
 
 </div>
+
+  </div>
+
    </div>
 
           {/* <!-- Footer --> */}
-          < footer className="footer" >
+          {/* < footer className="footer" >
             <div className="content has-text-centered">
               <i className="fab fa-facebook icon is-large is-primary"></i>
               <i className="fab fa-instagram icon is-large is-primary"></i>
               <i className="fab fa-github icon is-large is-primary"></i>
             </div>
+<<<<<<< HEAD
           </footer >
       
+=======
+          </footer > */}
+        </nav>
+>>>>>>> 1f4ee0a64a77eca2c8305d6319087673182ddbac
 
       </div >
     )
   }
 }
+
 export default App;
 

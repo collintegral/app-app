@@ -53,6 +53,10 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.3.0",
+<<<<<<< HEAD
+=======
+    "@material-ui/icons": "^4.2.1",
+>>>>>>> 1f4ee0a64a77eca2c8305d6319087673182ddbac
     "axios": "^0.19.0",
     "bcrypt": "^3.0.6",
     "bulma": "^0.7.5",
