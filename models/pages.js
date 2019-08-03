@@ -1,14 +1,13 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
-const db = require("../models");
+import mongoose from 'mongoose';
+import Tab from './tabs';
 
+const { Schema } = mongoose;
 const PageSchema = new Schema({
-   pageName: {
-       type: Text
-       , required: true
-   }
-   , children: [db.Tab]
+  pageName: {
+    type: String,
+    required: true,
+  },
+  children: [Tab],
 });
 
-const Page = mongoose.model("Page", PageSchema);
-module.export = Page;
+module.export = PageSchema;

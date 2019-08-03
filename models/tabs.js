@@ -1,14 +1,13 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
-const db = require("../models");
+import mongoose from 'mongoose';
+import Component from './components';
 
+const { Schema } = mongoose;
 const TabSchema = new Schema({
-   tabName: {
-       type: Text
-       , required: true
-   }
-   , tabContents: [db.Component]
+  tabName: {
+    type: String,
+    required: true,
+  },
+  tabContents: [Component],
 });
 
-const Tab = mongoose.model("Tab", TabSchema);
-module.export = Tab;
+module.export = TabSchema;

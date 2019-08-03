@@ -33,7 +33,7 @@ class App extends Component {
             <div className="navbar-end">
               <div className="navbar-item">
                 {/* <!--Modal--> */}
-                <div id="image-modal" className="modal" modalDlg={document.querySelector('#image-modal')}>
+                <div id="image-modal" className="modal">
                   <div className="modal-background"></div>
                   <div className="modal-content">
                     <div className="modal-card">
@@ -61,19 +61,10 @@ class App extends Component {
                       {/* <!----> */}
                     </div>
                   </div>
-                  <button id="image-modal-close" className="modal-close" imageModalCloseBtn={document.querySelector('#image-modal-close')}></button>
+                  <button id="image-modal-close" className="modal-close"></button>
                 </div>
                 <br />
-
-                <button className="button" id="showModal"  btn={document.querySelector('#showModal')}
-                  {btn.addEventListener('click', () => {
-                    modalDlg.classList.add('is-active')
-                  })}>
-                  Log In
-                  </button>
-
-                <button className="button modal-button" id="showModal">Log In</button>
-
+                <button className="button" id="showModal">Log In</button>
               </div>
               <div className="navbar-item">
                 {/* <!--Modal--> */}
@@ -116,9 +107,8 @@ class App extends Component {
                   </div>
                   <button id="image-modal-close1" className="modal-close"></button>
                 </div>
-                
                 <br />
-                <button className="button modal-button" id="showModal1">Sign Up</button>
+                <button className="button" id="showModal1">Sign Up</button>
               </div>
             </div>
           </div>
@@ -126,170 +116,63 @@ class App extends Component {
         {/* <!--Will be draggable components, static for now--> */}
         < nav className="navbar is-mobile" role="navigation" aria-label="main navigation" >
           {/* <!-- Hamburger --> */}
-
-
-//Colors
-const theme = createAppApp({
-  
-    palette: {
-      primary: {
-        main: '#4dd0e1',
-      },
-      secondary: {
-        main: '#1976d2',
-      },
-    },
-  
-});
-//Styling
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1
-  },
-  menuButton: {
-    marginRight: theme.spacing(2)
-  },
-  title: {
-    flexGrow: 1
-  }
-}));
-const styles = {
-  fontFamily: "sans-serif",
-  textAlign: "center"
-};
-const section = {
-  height: "100%",
-  paddingTop: 5,
-  backgroundColor: "#fff"
-};
-const summary = {
-  marginTop: 15,
-  marginBottom: 15,
-  padding: 10,
-  backgroundColor: "#d4d4d4"
-};
-
-//Navbar
-export default function MenuAppBar() {
-  const classes = useStyles();
-  const [auth, setAuth] = React.useState(true);
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-
-  function handleChange(event) {
-    setAuth(event.target.checked);
-  }
-
-  function handleMenu(event) {
-    setAnchorEl(event.currentTarget);
-  }
-
-  function handleClose() {
-    setAnchorEl(null);
-  }
-
-  return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            App-App
-          </Typography>
-          {auth && (
-            <div>
-              <IconButton
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleMenu}
-                color="inherit"
-              >
-                <AccountCircle />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "right"
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "right"
-                }}
-                open={open}
-                onClose={handleClose}
-              >
-                <MenuItem onClick={handleClose}>Login</MenuItem>
-                <MenuItem onClick={handleClose}>Sign up</MenuItem>
-                </Menu>
+          < a role="button" id="burger" className="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+            data-target="navMenu" >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a >
+          <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
+            <div className="navbar-start is-mobile">
+              <a href="#" className="navbar-item is-mobile is-hoverable">
+                Navbar
+            </a>
+              <a href="./components/message.jsx" class="navbar-item is-mobile is-hoverable">
+                Message
+          </a>
+              <a href="./components/card.jsx" class="navbar-item is-mobile is-hoverable">
+                Card
+          </a>
+              <a href="./components/hero.jsx" class="navbar-item is-mobile is-hoverable">
+                Hero
+          </a>
+              <a href="./components/container.jsx" class="navbar-item is-mobile is-hoverable">
+                Container
+          </a>
+              <a href="./components/image-box.jsx" class="navbar-item is-mobile is-hoverable">
+                Image Box
+          </a>
+              <a href="#" class="navbar-item is-mobile is-hoverable">
+                Footer
+                </a>
             </div>
-          )}
-        </Toolbar>
-      </AppBar>
-    </div>
-  );
+          </div>
+          <div className="navbar-end"></div>
+          {/* <!-- Body Grid --> */}
+          < div id="grid" className="container is-mobile" >
+            <div className="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div className="cell cell-1" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">1</div>
+              <div className="cell cell-2" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">2</div>
+              <div className="cell cell-3" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">3</div>
+              <div className="cell cell-4" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">4</div>
+              <div className="cell cell-5" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">5</div>
+              <div className="cell cell-6" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">6</div>
+              <div className="cell cell-7" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">7</div>
+              <div className="cell cell-8" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">8</div>
+              <div className="cell cell-9" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">9</div>
+            </div>
+          </div >
+          {/* <!-- Footer --> */}
+          < footer className="footer" >
+            <div className="content has-text-centered">
+              <i className="fab fa-facebook icon is-large is-primary"></i>
+              <i className="fab fa-instagram icon is-large is-primary"></i>
+              <i className="fab fa-github icon is-large is-primary"></i>
+            </div>
+          </footer >
+        </nav>
+      </div>
+  )
+  }
 }
-
-//Grid
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-}));
-
-export default function CenteredGrid() {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      <Grid container spacing={2}>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>m=4</Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>m=4</Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>m=4</Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>m=4</Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>m=4</Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>m=4</Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>m=4</Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>m=4</Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>m=4</Paper>
-        </Grid>
-      </Grid>
-    </div>
-  );
-}
-
-// export default App;
-
+export default App;

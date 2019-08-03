@@ -1,8 +1,19 @@
-module.exports = {
-  Component: require("./components"),
-  //Theme: require("./themes"),
-  Fonts: require("./fonts"),
-  User: require("./users"),
-  Page: require("./pages"),
-  Tab: require("./tabs")
+import model from 'mongoose';
+import ComponentSchema from './components';
+import Fonts from './fonts';
+import UserSchema from './users';
+import PageSchema from './pages';
+import TabSchema from './tabs';
+
+const User = model('User', UserSchema);
+const Page = model('Page', PageSchema);
+const Tab = model('Tab', TabSchema);
+const Component = model('Component', ComponentSchema);
+
+export default {
+  Component,
+  Fonts,
+  User,
+  Page,
+  Tab,
 };
