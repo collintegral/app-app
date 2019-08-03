@@ -4,6 +4,7 @@ import './app.css';
 import App from 'app.js';
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
@@ -74,6 +75,11 @@ function dragStart(event) {
     event.dataTransfer.setData("Text", event.target.id);
   }
 
+  
+  ReactDOM.render(<App />, document.querySelector('#root'));
+    
+  //grid demo found at https://codesandbox.io/s/1yvoo
+
   function allowDrop(event) {
     event.preventDefault();
   }
@@ -83,3 +89,4 @@ function dragStart(event) {
     event.target.appendChild(document.getElementById(data));
   }  
 
+  export default App;
