@@ -64,16 +64,16 @@ class App extends Component {
                   <button id="image-modal-close" className="modal-close" imageModalCloseBtn={document.querySelector('#image-modal-close')}></button>
                 </div>
                 <br />
-<<<<<<< HEAD
+
                 <button className="button" id="showModal"  btn={document.querySelector('#showModal')}
                   {btn.addEventListener('click', () => {
                     modalDlg.classList.add('is-active')
                   })}>
                   Log In
                   </button>
-=======
+
                 <button className="button modal-button" id="showModal">Log In</button>
->>>>>>> oldapp
+
               </div>
               <div className="navbar-item">
                 {/* <!--Modal--> */}
