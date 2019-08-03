@@ -19,7 +19,7 @@ import purple from '@material-ui/core/colors/purple';
 
 //Colors
 const theme = createAppApp({
-  {
+  
     palette: {
       primary: {
         main: '#4dd0e1',
@@ -28,7 +28,7 @@ const theme = createAppApp({
         main: '#1976d2',
       },
     },
-  }
+  
 });
 //Styling
 const useStyles = makeStyles(theme => ({
@@ -120,10 +120,17 @@ export default function MenuAppBar() {
               >
                 <MenuItem onClick={handleClose}>Login</MenuItem>
                 <MenuItem onClick={handleClose}>Sign up</MenuItem>
-              </Menu>
+                </Menu>
             </div>
+          )}
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
+}
 
 //Grid
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
