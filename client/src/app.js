@@ -13,8 +13,24 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormGroup from "@material-ui/core/FormGroup";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
+import { createAppApp } from '@material-ui/core/styles';
+import purple from '@material-ui/core/colors/purple';
 
-//Nav Bar
+
+//Colors
+const theme = createAppApp({
+  {
+    palette: {
+      primary: {
+        main: '#4dd0e1',
+      },
+      secondary: {
+        main: '#1976d2',
+      },
+    },
+  }
+});
+//Styling
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -26,7 +42,23 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1
   }
 }));
+const styles = {
+  fontFamily: "sans-serif",
+  textAlign: "center"
+};
+const section = {
+  height: "100%",
+  paddingTop: 5,
+  backgroundColor: "#fff"
+};
+const summary = {
+  marginTop: 15,
+  marginBottom: 15,
+  padding: 10,
+  backgroundColor: "#d4d4d4"
+};
 
+//Navbar
 export default function MenuAppBar() {
   const classes = useStyles();
   const [auth, setAuth] = React.useState(true);
