@@ -1,109 +1,124 @@
-import './menu.css';
+ // <div>
+      //   <nav className="navbar is-mobile" role="navigation" aria-label="main navigation">
+      //     <div className="navbar-brand">
+      //       <a className="navbar-item" href="https://bulma.io">
+      //         <img src="/assets/images/Logo.png" />
+      //       </a>
+      //     </div>
+      //     {/* Hamburger */}
+      //     {/* <a role="button" id="burger" className="navbar-burger burgeris-mobile" aria-label="menu" aria-expanded="false"
+      //     data-target="navMenu">
+      //     <span aria-hidden="true"></span>
+      //     <span aria-hidden="true"></span>
+      //     <span aria-hidden="true"></span>
+      //   </a>}
+      // </div> */}
+      //     <div id="navbarMenu" className="navbar-menu is-pulled-left is-mobile">
+      //       <div className="navbar-start is-mobile">
+      //         <div className="navbar-item is-hoverable is-mobile">
+      //           <a href="#" className="navbar is-mobile">
+      //             The App-App
+      //           </a>
+      //           <div className="navbar is-mobile">
+      //             <a href="#" className="navbar-item is-mobile">
+      //             </a>
+      //             <hr className="navbar-divider is-mobile" />
+      //           </div>
+      //         </div>
+      //       </div>
+      //       <div className="navbar-end">
+      //         <div className="navbar-item">
+      //           {/* <!--Modal--> */}
+      //           <div id="image-modal" className="modal" modalDlg={document.querySelector('#image-modal')}>
+      //             <div className="modal-background"></div>
+      //             <div className="modal-content">
+      //               <div className="modal-card">
+      //                 {/* <!----> */}
+      //                 <article className="message">
+      //                   <div className="message-header">
+      //                     <p>Welcome!</p>
+      //                   </div>
+      //                   <div className="message-body">
+      //                     <form action="/api/login" method="post">
+      //                       <div>
+      //                         <label>Email:</label>
+      //                         <input type="text" name="email" id="loginemail" />
+      //                       </div>
+      //                       <div>
+      //                         <label>Password:</label>
+      //                         <input type="password" name="password" id="loginpassword" />
+      //                       </div>
+      //                       <div>
+      //                         <input type="submit" value="Log In" />
+      //                       </div>
+      //                     </form>
+      //                   </div>
+      //                 </article>
+      //                 {/* <!----> */}
+      //               </div>
+      //             </div>
+      //             <button id="image-modal-close" className="modal-close" imageModalCloseBtn={document.querySelector('#image-modal-close')}></button>
+      //           </div>
+      //           <br />
 
-function App() {
-    return (
-        <aside className="menu is-pulled-left">
-            <p className="menu-label">
-                <p className="menu-label">
-                    Components
-</p>
-                <ul classNameName="menu-list">
-                    <li><a id="card" draggable="true" ondragstart="drag(event)">Card</a>
-                        <div className="card" draggable="true" ondragstart="drag(event)">
-                            <div className="card-content">
-                                <p className="title">
-                                    Card
-                    </p>
-                            </div>
-                            <footer className="card-footer">
-                                <p className="card-footer-item">
-                                    <span>
-                                        View on <a href="">Twitter</a>
-                                    </span>
-                                </p>
-                                <p className="card-footer-item">
-                                    <span>
-                                        Share on <a href="#">Facebook</a>
-                                    </span>
-                                </p>
-                            </footer>
-                        </div>
-                    </li>
-                    <li><a id="navBar" draggable="true" ondragstart="drag(event)">Navbar</a>
-                        <nav className="navbar" draggable="true" ondragstart="drag(event)" role="navigation" aria-label="main navigation">
-                            <div className="navbar-brand">
+      //           <button className="button" id="showModal"  btn={document.querySelector('#showModal')}
+      //             {btn.addEventListener('click', () => {
+      //               modalDlg.classList.add('is-active')
+      //             })}>
+      //             Log In
+      //             </button>
 
-                                <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
-                                    <span aria-hidden="true"></span>
-                                    <span aria-hidden="true"></span>
-                                    <span aria-hidden="true"></span>
-                                </a>
-                            </div>
-                        </nav>
-                    </li>
-                    <li><a id="message" draggable="true" ondragstart="drag(event)">Message</a>
-                        <article className="message" draggable="true" ondragstart="drag(event)">
-                            <div className="message-header">
-                                <p>Message</p>
-                                <button className="delete" aria-label="delete"></button>
-                            </div>
-                            <div className="message-body">
-                                Message Body
-                </div>
-                        </article>
-                    </li>
-                    <li><a id="imageBox" draggable="true" ondragstart="drag(event)">Image Box</a>
-                        <figure className="image is-128x128" draggable="true" ondragstart="drag(event)">
-                            <img src=""></img>
-                        </figure>
-                    </li>
-                    <li><a id="hero" draggable="true" ondragstart="drag(event)">Hero</a>
-                        <section className="hero" draggable="true" ondragstart="drag(event)">
-                            <div className="hero-body">
-                                <div className="container">
-                                    <h1 className="title">
-                                        Hero title
-                        </h1>
-                                    <h2 className="subtitle">
-                                        Hero subtitle
-                        </h2>
-                                </div>
-                            </div>
-                        </section>
-                    </li>
-                    <li><a id="form" draggable="true" ondragstart="drag(event)">Form</a>
-                        <div className="field" draggable="true" ondragstart="drag(event)">
-                            <label className="label">Name</label>
-                            <div className="control">
-                                <input className="input" type="text" placeholder="e.g Alex Smith"></input>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a id="container" draggable="true" ondragstart="drag(event)">Container</a>
-                        <div className="container" draggable="true" ondragstart="drag(event)">
-                            <div className="notification">
-                                This container is <strong>centered</strong> on desktop.
-            </div>
-                        </div>
-                    </li>
-                    <li><a id="footer" draggable="true" ondragstart="drag(event)">Footer</a>
-                        <footer className="footer" draggable="true" ondragstart="drag(event)">
-                            <div className="content has-text-centered">
-                                <p>
-                                </p>
-                            </div>
-                        </footer>
-                    </li>
-                </ul>
-                </p>
-</aside>
+      //           <button className="button modal-button" id="showModal">Log In</button>
 
-            );
-        }
-
-
-function drag(ev) {
-                ev.dataTransfer.setData("text", ev.target.id);
-            };
-            
-export default App;
+      //         </div>
+      //         <div className="navbar-item">
+      //           {/* <!--Modal--> */}
+      //           <div id="image-modal1" className="modal">
+      //             <div className="modal-background"></div>
+      //             <div className="modal-content">
+      //               <div className="modal-card">
+      //                 {/* <!---->  */}
+      //                 <article className="message">
+      //                   <div className="message-header">
+      //                     <p>Create Your Free Account</p>
+      //                   </div>
+      //                   <div className="message-body">
+      //                     <form id="sign-up-form">
+      //                       <div>
+      //                         <label>Email:</label>
+      //                         <input type="text" name="email" id="email" />
+      //                       </div>
+      //                       <div>
+      //                         <label>Username:</label>
+      //                         <input type="text" name="username" id="username" />
+      //                       </div>
+      //                       <div>
+      //                         <label>Password:</label>
+      //                         <input type="password" name="password" id="password" />
+      //                       </div>
+      //                       <div>
+      //                         <label>Confirm Password:</label>
+      //                         <input type="password" name="confpassword" id="confpassword" />
+      //                       </div>
+      //                       <div>
+      //                         <input type="submit" value="Sign Up" id="sign-up-btn" />
+      //                       </div>
+      //                     </form>
+      //                     <p id="errors"></p>
+      //                   </div>
+      //                 </article>
+      //                 {/* <!----> */}
+      //               </div>
+      //             </div>
+      //             <button id="image-modal-close1" className="modal-close"></button>
+      //           </div>
+                
+      //           <br />
+      //           <button className="button modal-button" id="showModal1">Sign Up</button>
+      //         </div>
+      //       </div>
+      //     </div>
+      //   </nav >
+      //   {/* <!--Will be draggable components, static for now--> */}
+      //   < nav className="navbar is-mobile" role="navigation" aria-label="main navigation" >
+      //     {/* <!-- Hamburger --> */}
